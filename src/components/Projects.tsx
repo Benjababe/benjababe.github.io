@@ -4,6 +4,7 @@ import GithubIcon from "./icons/GithubIcon";
 import YouTubeIcon from "./icons/YouTubeIcon";
 import LinkIcon from "./icons/LinkIcon";
 import DevpostIcon from "./icons/DevpostIcon";
+import GreasyForkIcon from "./icons/GreasyForkIcon";
 
 interface ProjectsProps {
     id: string;
@@ -79,6 +80,23 @@ const Projects = ({ id, projectsRef }: ProjectsProps) => {
                 <ul className="project-desc">
                     <li>Developed a program which converts either an image or video into a webm video of varying resolution.</li>
                     <li>Users are able to select either one of 2 encoding options, VP8 or VP9.</li>
+                </ul>
+            </ProjectEntry>
+            <ProjectEntry
+                name="NTU Kaltura Downloader"
+                type="Userscript"
+                skills={["Javascript"]} >
+                <ul className="icon-container project-icon-container">
+                    <li className="icon project-icon">
+                        <GithubIcon url="https://github.com/Benjababe/Dumb-Stuff/blob/main/Userscripts/ntu-kaltura-downloader.js" />
+                    </li>
+                    <li className="icon project-icon">
+                        <GreasyForkIcon url="https://greasyfork.org/en/scripts/420073-ntu-kaltura-downloader" />
+                    </li>
+                </ul>
+                <ul className="project-desc">
+                    <li>Developed a userscript which includes a button to download videos hosted on Kaltura.</li>
+                    <li>Script either runs on NTULearn itself or embedded Kaltura pages within NTULearn.</li>
                 </ul>
             </ProjectEntry>
             <ProjectEntry
