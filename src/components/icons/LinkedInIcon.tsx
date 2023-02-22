@@ -1,4 +1,4 @@
-import liIcon from "../../assets/images/linkedin-icon.svg";
+import linkedinIcon from "../../assets/images/linkedin-icon.svg";
 
 interface LinkedInIconProps {
     url: string;
@@ -7,7 +7,7 @@ interface LinkedInIconProps {
 const LinkedInIcon = ({ url }: LinkedInIconProps) => {
     return (
         <a href={url} target="_blank" rel="noreferrer">
-            <img src={liIcon} alt="LinkedIn Icon"></img>
+            <img src={linkedinIcon} alt="LinkedIn Icon"></img>
         </a>
     );
 };

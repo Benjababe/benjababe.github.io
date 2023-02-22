@@ -5,6 +5,7 @@ import YouTubeIcon from "./icons/YouTubeIcon";
 import LinkIcon from "./icons/LinkIcon";
 import DevpostIcon from "./icons/DevpostIcon";
 import GreasyForkIcon from "./icons/GreasyForkIcon";
+import RedditIcon from "./icons/RedditIcon";
 
 interface ProjectsProps {
     id: string;
@@ -164,6 +165,9 @@ const Projects = ({ id, projectsRef }: ProjectsProps) => {
                 <ul className="icon-container project-icon-container">
                     <li className="icon project-icon">
                         <GithubIcon url="https://github.com/Benjababe/Buldog-Playsound-Bot" />
+                    </li>
+                    <li className="icon project-icon">
+                        <RedditIcon url="https://reddit.com/u/buldogplaysoundbot" />
                     </li>
                 </ul>
                 <ul className="project-desc">

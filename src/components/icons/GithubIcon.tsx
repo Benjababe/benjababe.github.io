@@ -1,4 +1,4 @@
-import ghIcon from "../../assets/images/github-icon.svg";
+import githubIcon from "../../assets/images/github-icon.svg";
 
 interface GithubIconProps {
     url: string;
@@ -7,7 +7,7 @@ interface GithubIconProps {
 const GithubIcon = ({ url }: GithubIconProps) => {
     return (
         <a href={url} target="_blank" rel="noreferrer">
-            <img src={ghIcon} alt="Github Icon"></img>
+            <img src={githubIcon} alt="Github Icon"></img>
         </a>
     );
 };

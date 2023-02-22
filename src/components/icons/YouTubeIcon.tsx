@@ -1,4 +1,4 @@
-import ytIcon from "../../assets/images/youtube-icon.svg";
+import youtubeIcon from "../../assets/images/youtube-icon.svg";
 
 interface LinkIconProps {
     url: string;
@@ -7,7 +7,7 @@ interface LinkIconProps {
 const YouTubeIcon = ({ url }: LinkIconProps) => {
     return (
         <a href={url} target="_blank" rel="noreferrer">
-            <img src={ytIcon} alt="YouTube Icon"></img>
+            <img src={youtubeIcon} alt="YouTube Icon"></img>
         </a>
     );
 };
