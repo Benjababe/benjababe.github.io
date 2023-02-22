@@ -10,7 +10,7 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
     return (
         <section id={id} className="section" ref={experienceRef}>
             <h2>Experience</h2>
-            <ResumeEntry dateRange="May 2023 - Dec 2023">
+            <ResumeEntry dateRange="May 2022 - Dec 2022">
                 <div className="resume-content">
                     <h3>Full-Stack Developer Intern</h3>
                     <p className="light-text">FoodLine.SG | Singapore</p>
