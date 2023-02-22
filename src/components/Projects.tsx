@@ -52,20 +52,6 @@ const Projects = ({ id, projectsRef }: ProjectsProps) => {
                 </ul>
             </ProjectEntry>
             <ProjectEntry
-                name="Buldog Playsound Bot"
-                type="Online Bot"
-                skills={["NodeJS", "FFMPEG"]} >
-                <ul className="icon-container project-icon-container">
-                    <li className="icon project-icon">
-                        <GithubIcon url="https://github.com/Benjababe/Buldog-Playsound-Bot" />
-                    </li>
-                </ul>
-                <ul className="project-desc">
-                    <li>Developed a web scraper to pull several pages periodically to retrieve command strings and audio files.</li>
-                    <li>Integrated FFMPEG to allow concatenation of multiple audio files as well as manipulating their playback rates.</li>
-                </ul>
-            </ProjectEntry>
-            <ProjectEntry
                 name="WebM Widener"
                 type="Recreational Tool"
                 skills={["Python", "LibVPX", "Pillow"]} >
@@ -119,6 +105,25 @@ const Projects = ({ id, projectsRef }: ProjectsProps) => {
                 </ul>
             </ProjectEntry>
             <ProjectEntry
+                name="2D MultiAI Playground"
+                type="Multiplayer Game"
+                skills={["Python", "Socket.IO", "Pygame"]} >
+                <ul className="icon-container project-icon-container">
+                    <li className="icon project-icon">
+                        <GithubIcon url="https://github.com/Benjababe/HackNRoll-2022" />
+                    </li>
+                    <li className="icon project-icon">
+                        <DevpostIcon url="https://devpost.com/software/hacknroll-2022" />
+                    </li>
+                </ul>
+                <ul className="project-desc">
+                    <li>Project made for Hack&Roll 2022.</li>
+                    <li>🏆 Won Top 8 in no particular order.</li>
+                    <li>Developed a multiplayer game in a group where players train their own self moving and shooting character and compete with others.</li>
+                    <li>Worked on all of the game assets, physics and the backend.</li>
+                </ul>
+            </ProjectEntry>
+            <ProjectEntry
                 name="Not Rosa Musou"
                 type="Web Game"
                 skills={["C#", "Unity"]} >
@@ -136,21 +141,34 @@ const Projects = ({ id, projectsRef }: ProjectsProps) => {
                 </ul>
             </ProjectEntry>
             <ProjectEntry
-                name="2D MultiAI Playground"
-                type="Multiplayer Game"
-                skills={["Python", "Socket.IO", "Pygame"]} >
+                name="NotCafeDownloader"
+                type="CLI Application"
+                skills={["Python"]} >
                 <ul className="icon-container project-icon-container">
                     <li className="icon project-icon">
-                        <GithubIcon url="https://github.com/Benjababe/HackNRoll-2022" />
-                    </li>
-                    <li className="icon project-icon">
-                        <DevpostIcon url="https://devpost.com/software/hacknroll-2022" />
+                        <GithubIcon url="https://github.com/Benjababe/NotCafeDownloader" />
                     </li>
                 </ul>
                 <ul className="project-desc">
-                    <li>Project made for Hack&Roll 2022. Won Top 8 in no particular order</li>
-                    <li>Developed a multiplayer game in a group where players train their own self moving and shooting character and compete with others</li>
-                    <li>Worked on all of the game assets, physics and the backend</li>
+                    <li>Developed a CLI aggregate manga downloader with site specific features.</li>
+                    <li>Implemented publicly available APIs and a web scraper to retrieve information for image downloads.</li>
+                    <li>Constructed a modular system where extensions for additional websites can be written and integrated seamlessly</li>
+                    <li>Reverse engineered websites' JavaScript to include features not easily accessible to the average user</li>
+                    <li>Ensured operational readiness with a plentiful amount of unit tests which are run before publishing</li>
+                </ul>
+            </ProjectEntry>
+            <ProjectEntry
+                name="Buldog Playsound Bot"
+                type="Online Bot"
+                skills={["NodeJS", "FFMPEG"]} >
+                <ul className="icon-container project-icon-container">
+                    <li className="icon project-icon">
+                        <GithubIcon url="https://github.com/Benjababe/Buldog-Playsound-Bot" />
+                    </li>
+                </ul>
+                <ul className="project-desc">
+                    <li>Developed a web scraper to pull several pages periodically to retrieve command strings and audio files.</li>
+                    <li>Integrated FFMPEG to allow concatenation of multiple audio files as well as manipulating their playback rates.</li>
                 </ul>
             </ProjectEntry>
         </section>
