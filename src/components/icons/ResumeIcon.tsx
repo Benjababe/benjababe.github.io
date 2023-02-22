@@ -7,7 +7,7 @@ interface ResumeIconProps {
 const ResumeIcon = ({ url }: ResumeIconProps) => {
     return (
         <a href={url} target="_blank" rel="noreferrer">
-            <img src={resumeIcon} alt="Devpost Icon" style={{ background: "white" }}></img>
+            <img src={resumeIcon} alt="Resume Icon" style={{ background: "white" }}></img>
         </a>
     );
 };
