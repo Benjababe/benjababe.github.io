@@ -1,0 +1,36 @@
+.mugshot-container {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.mugshot-img {
+    max-width: 12rem;
+    max-height: 12rem;
+    border: 0.3rem solid rgba(255, 255, 255, 0.2);
+}
+
+.desc-container {
+    text-align: center;
+}
+
+.title-name {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0.25rem;
+}
+
+.sub-title {
+    text-transform: uppercase;
+    color: #FF7E7E;
+}
+
+.sub-title a {
+    color: rgb(93 126 255);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.desc {
+    max-width: 30rem;
+    margin: auto;
+}
