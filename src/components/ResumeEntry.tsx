@@ -1,12 +1,11 @@
 import { ReactNode } from "react";
-import "../assets/styles/App.css";
 
-interface EducationEntryProps {
+interface ResumeEntryProps {
     children: ReactNode;
     dateRange: string;
 }
 
-const ResumeEntry = ({ children, dateRange }: EducationEntryProps) => {
+const ResumeEntry = ({ children, dateRange }: ResumeEntryProps) => {
     return (
         <div className="resume-entry plain-text">
             {children}

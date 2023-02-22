@@ -17,24 +17,6 @@ const Projects = ({ id, projectsRef }: ProjectsProps) => {
         <section id={id} className="section" ref={projectsRef}>
             <h2>Projects</h2>
             <ProjectEntry
-                name="CPP Video to ASCII"
-                type="CLI Application"
-                skills={["C++", "CMake", "OpenCV"]} >
-                <ul className="icon-container project-icon-container">
-                    <li className="icon project-icon">
-                        <GithubIcon url="https://github.com/Benjababe/CPP-Video-to-ASCII" />
-                    </li>
-                    <li className="icon project-icon">
-                        <YouTubeIcon url="https://www.youtube.com/watch?v=H09VKJ3H3Lk" />
-                    </li>
-                </ul>
-                <ul className="project-desc">
-                    <li>Developed a CLI application that converts videos into an ASCII output on your terminal.</li>
-                    <li>Allows frames to be displayed by writing to the output buffer or the console buffer directly.</li>
-                    <li>Supports reduced colour switching and reduced framerates to optimise frame printing times.</li>
-                </ul>
-            </ProjectEntry>
-            <ProjectEntry
                 name="Multiplayer Self Driving Playground"
                 type="Web Game"
                 skills={["NodeJS", "ExpressJS", "JWT", "Socket.IO"]} >
@@ -50,6 +32,24 @@ const Projects = ({ id, projectsRef }: ProjectsProps) => {
                     <li>Project made during Hack&Roll 2023.</li>
                     <li>Developed a web game with a friend where players can train their own self driving neural network and compete with others.</li>
                     <li>Worked on the backend, all communications between client & server.</li>
+                </ul>
+            </ProjectEntry>
+            <ProjectEntry
+                name="CPP Video to ASCII"
+                type="CLI Application"
+                skills={["C++", "CMake", "OpenCV"]} >
+                <ul className="icon-container project-icon-container">
+                    <li className="icon project-icon">
+                        <GithubIcon url="https://github.com/Benjababe/CPP-Video-to-ASCII" />
+                    </li>
+                    <li className="icon project-icon">
+                        <YouTubeIcon url="https://www.youtube.com/watch?v=H09VKJ3H3Lk" />
+                    </li>
+                </ul>
+                <ul className="project-desc">
+                    <li>Developed a CLI application that converts videos into an ASCII output on your terminal.</li>
+                    <li>Allows frames to be displayed by writing to the output buffer or the console buffer directly.</li>
+                    <li>Supports reduced colour switching and reduced framerates to optimise frame printing times.</li>
                 </ul>
             </ProjectEntry>
             <ProjectEntry
