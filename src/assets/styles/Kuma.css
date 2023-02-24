@@ -1,0 +1,27 @@
+.kuma-peek {
+    max-width: 8rem;
+    position: absolute;
+    left: 100%;
+    top: 15rem;
+    transform: translate(-60%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kuma-peek:hover {
+    transform: translate(-90%, 30%);
+    rotate: -5deg;
+}
+
+.kuma.hidden {
+    min-height: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.kuma.shown {
+    overflow: auto;
+    transition: all 0.3s ease-in-out;
+}
