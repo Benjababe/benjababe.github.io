@@ -10,7 +10,7 @@ import { Kuma, KumaWidget } from "./components/Kuma";
 
 
 function App() {
-    const [showKuma, setShowKuma] = useState(true);
+    const [showKuma, setShowKuma] = useState(false);
 
     const aboutRef = useRef<HTMLDivElement>(null),
         educationRef = useRef<HTMLDivElement>(null),

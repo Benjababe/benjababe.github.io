@@ -1,0 +1,12 @@
+benjababe@kuma ~ $ genlop -t -l | grep -B 1 hours | grep -A 1 2023
+     Mon Feb 20 14:54:38 2023 >>> sys-devel/gcc-11.3.1_p20221209
+       merge time: 15 hours, 56 minutes and 25 seconds.
+--
+     Wed Feb 22 03:51:32 2023 >>> dev-lang/rust-1.65.0
+       merge time: 1 day, 4 hours, 30 minutes and 47 seconds.
+--
+     Thu Feb 23 15:15:19 2023 >>> sys-devel/llvm-15.0.7
+       merge time: 19 hours, 13 minutes and 51 seconds.
+--
+     Fri Feb 24 16:29:06 2023 >>> sys-devel/llvm-14.0.6-r2
+       merge time: 18 hours, 49 minutes and 5 seconds.

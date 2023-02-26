@@ -1,5 +1,12 @@
-import SwipeableViews from "react-swipeable-views";
+import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
 import kumaPeek from "../assets/images/kuma/kuma-peek.png";
+import kuma1 from "../assets/images/kuma/kuma-pic-1.jpg";
+import kuma2 from "../assets/images/kuma/kuma-pic-2.jpg";
+import kuma3 from "../assets/images/kuma/kuma-pic-3.jpg";
+import kuma4 from "../assets/images/kuma/kuma-pic-4.jpg";
+import kumaGenlop from "../assets/images/kuma/kuma-genlop.png";
 import "../assets/styles/Kuma.css";
 
 interface KumaWidgetProps {
@@ -30,10 +37,28 @@ export const KumaWidget = ({ showKuma, setShowKuma }: KumaWidgetProps) => {
 };
 
 export const Kuma = ({ showKuma }: KumaProps) => {
-    return (
-        <section className={`section kuma ${(showKuma) ? "shown" : "hidden"}`}>
-            <div className="blog-container">
+    const images: ReactImageGalleryItem[] = [
+        { original: kuma1, },
+        { original: kuma2, },
+        { original: kuma3, },
+        { original: kuma4, },
+    ];
 
+    return (
+        <section className={`section kuma-section ${(showKuma) ? "shown" : "hidden"}`}>
+            <div className="blog-container">
+                <ImageGallery
+                    items={images}
+                    infinite={true}
+                    showThumbnails={false}
+                    showBullets={true}
+                    showPlayButton={false}
+                    showFullscreenButton={false}
+                />
+                <h3 className="kuma-caption light-text">
+                    Who is so much of a moron to spend a week installing an operating system?
+                </h3>
+                <img width="100%" src={kumaGenlop} alt="Kuma Genlop Times" />
             </div>
         </section>
     );
