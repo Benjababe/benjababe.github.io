@@ -1,4 +1,4 @@
-import { useState, useRef, ForwardedRef } from "react";
+import { useState, ForwardedRef } from "react";
 import expandIcon from "../assets/images/icons/expand-icon.svg";
 import ProjectEntries from "./ProjectEntries";
 
