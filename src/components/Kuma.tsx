@@ -1,5 +1,5 @@
 import SwipeableViews from "react-swipeable-views";
-import kumaPeek from "../assets/images/kuma-peek.png";
+import kumaPeek from "../assets/images/kuma/kuma-peek.png";
 import "../assets/styles/Kuma.css";
 
 interface KumaWidgetProps {

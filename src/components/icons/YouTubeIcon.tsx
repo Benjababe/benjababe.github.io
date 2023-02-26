@@ -1,4 +1,4 @@
-import youtubeIcon from "../../assets/images/youtube-icon.svg";
+import youtubeIcon from "../../assets/images/icons/youtube-icon.svg";
 
 interface LinkIconProps {
     url: string;

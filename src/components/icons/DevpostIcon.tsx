@@ -1,4 +1,4 @@
-import devpostIcon from "../../assets/images/devpost-icon.svg";
+import devpostIcon from "../../assets/images/icons/devpost-icon.svg";
 
 interface DevpostIconProps {
     url: string;

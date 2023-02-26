@@ -1,4 +1,4 @@
-import resumeIcon from "../../assets/images/resume-icon.svg";
+import resumeIcon from "../../assets/images/icons/resume-icon.svg";
 
 interface ResumeIconProps {
     url: string;

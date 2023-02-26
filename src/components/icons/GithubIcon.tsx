@@ -1,4 +1,4 @@
-import githubIcon from "../../assets/images/github-icon.svg";
+import githubIcon from "../../assets/images/icons/github-icon.svg";
 
 interface GithubIconProps {
     url: string;

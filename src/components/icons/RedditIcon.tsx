@@ -1,4 +1,4 @@
-import redditIcon from "../../assets/images/reddit-icon.svg";
+import redditIcon from "../../assets/images/icons/reddit-icon.svg";
 
 interface RedditIconProps {
     url: string;

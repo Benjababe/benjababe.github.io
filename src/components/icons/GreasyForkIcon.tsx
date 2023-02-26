@@ -1,4 +1,4 @@
-import greasyForkIcon from "../../assets/images/greasyfork-icon.svg";
+import greasyForkIcon from "../../assets/images/icons/greasyfork-icon.svg";
 
 interface GreasyForkIconProps {
     url: string;

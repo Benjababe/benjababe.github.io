@@ -1,4 +1,4 @@
-import linkIcon from "../../assets/images/link-icon.svg";
+import linkIcon from "../../assets/images/icons/link-icon.svg";
 
 interface LinkIconProps {
     url: string;

@@ -1,4 +1,4 @@
-import linkedinIcon from "../../assets/images/linkedin-icon.svg";
+import linkedinIcon from "../../assets/images/icons/linkedin-icon.svg";
 
 interface LinkedInIconProps {
     url: string;
