@@ -20,7 +20,7 @@ const Projects = ({ id, projectsRef }: ProjectsProps) => {
                 <h2>Projects</h2>
                 <ProjectEntries />
             </div>
-            <div className="expand-container">
+            <div className={`expand-container ${(expandProjects) ? "" : "expand"}`}>
                 <img
                     className={`img-expand ${(expandProjects) ? "contract" : ""}`}
                     onClick={toggleProjects}

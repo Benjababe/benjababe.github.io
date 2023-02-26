@@ -88,7 +88,7 @@ img {
 }
 
 .projects-container {
-    max-height: 60rem;
+    max-height: 80rem;
     overflow: hidden;
 }
 
@@ -122,7 +122,12 @@ img {
 
 .expand-container {
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 0.5rem;
+}
+
+.expand-container.expand {
+    background-image: linear-gradient(to bottom, transparent, rgb(30, 30, 30));
+    transform: translateY(-100%);
 }
 
 .img-expand {
@@ -132,4 +137,8 @@ img {
 
 .img-expand.contract {
     transform: rotate(180deg);
+}
+
+.footer-container {
+    padding-bottom: 5rem;
 }
