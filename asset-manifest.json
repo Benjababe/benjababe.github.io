@@ -1,8 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.408a90c7.css",
-    "main.js": "/static/js/main.43743c18.js",
+    "main.css": "/static/css/main.af39f49a.css",
+    "main.js": "/static/js/main.1bf127c5.js",
+    "static/media/kuma-pic-4.jpg": "/static/media/kuma-pic-4.800e7bb0ea437702af88.jpg",
+    "static/media/kuma-pic-1.jpg": "/static/media/kuma-pic-1.b4514716d75a6d3d14bc.jpg",
+    "static/media/kuma-pic-3.jpg": "/static/media/kuma-pic-3.a2ba2c8e8137867f04d7.jpg",
     "static/media/resume.pdf": "/static/media/resume.5a9ca8cfbbd1f7735038.pdf",
+    "static/media/kuma-genlop.png": "/static/media/kuma-genlop.e53e8a53e8285259de90.png",
+    "static/media/kuma-pic-2.jpg": "/static/media/kuma-pic-2.5165a61989542f419c4d.jpg",
+    "static/media/kuma-peek.png": "/static/media/kuma-peek.e871cf6782a856d85512.png",
     "static/media/mugshot.jpg": "/static/media/mugshot.61cd66de1a9d80ebf7f8.jpg",
     "static/media/link-icon.svg": "/static/media/link-icon.8c8479a3bbd2d306af4dc2152cb2f284.svg",
     "static/media/resume-icon.svg": "/static/media/resume-icon.a9f52eb35b88d425b68d4671595a8c14.svg",
@@ -12,12 +18,13 @@
     "static/media/youtube-icon.svg": "/static/media/youtube-icon.24c60742e5c118c306be5d72ef119e62.svg",
     "static/media/github-icon.svg": "/static/media/github-icon.97ed8e7eef60d61ca469881dd6f34511.svg",
     "static/media/devpost-icon.svg": "/static/media/devpost-icon.fe97464d4e97dc0af91108156a42c247.svg",
+    "static/media/expand-icon.svg": "/static/media/expand-icon.6d9c7e2ec4ef1cdb97c925b88dfeeb5b.svg",
     "index.html": "/index.html",
-    "main.408a90c7.css.map": "/static/css/main.408a90c7.css.map",
-    "main.43743c18.js.map": "/static/js/main.43743c18.js.map"
+    "main.af39f49a.css.map": "/static/css/main.af39f49a.css.map",
+    "main.1bf127c5.js.map": "/static/js/main.1bf127c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.408a90c7.css",
-    "static/js/main.43743c18.js"
+    "static/css/main.af39f49a.css",
+    "static/js/main.1bf127c5.js"
   ]
 }
