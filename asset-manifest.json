@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.54510533.css",
+    "main.css": "/static/css/main.54c7ac92.css",
     "main.js": "/static/js/main.d57e6331.js",
     "static/media/kuma-pic-4.jpg": "/static/media/kuma-pic-4.800e7bb0ea437702af88.jpg",
     "static/media/kuma-pic-1.jpg": "/static/media/kuma-pic-1.b4514716d75a6d3d14bc.jpg",
@@ -20,11 +20,11 @@
     "static/media/devpost-icon.svg": "/static/media/devpost-icon.fe97464d4e97dc0af91108156a42c247.svg",
     "index.html": "/index.html",
     "static/media/expand-icon.svg": "/static/media/expand-icon.6d9c7e2ec4ef1cdb97c925b88dfeeb5b.svg",
-    "main.54510533.css.map": "/static/css/main.54510533.css.map",
+    "main.54c7ac92.css.map": "/static/css/main.54c7ac92.css.map",
     "main.d57e6331.js.map": "/static/js/main.d57e6331.js.map"
   },
   "entrypoints": [
-    "static/css/main.54510533.css",
+    "static/css/main.54c7ac92.css",
     "static/js/main.d57e6331.js"
   ]
 }
