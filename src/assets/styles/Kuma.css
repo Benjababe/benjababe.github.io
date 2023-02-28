@@ -32,8 +32,8 @@
 }
 
 .image-gallery-image {
-    width: 40rem !important;
-    height: 30rem;
+    max-width: 40rem !important;
+    max-height: 30rem;
 }
 
 .kuma-caption {
