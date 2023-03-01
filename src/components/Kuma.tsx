@@ -56,7 +56,7 @@ export const Kuma = ({ showKuma }: KumaProps) => {
                     showFullscreenButton={false}
                 />
                 <h3 className="kuma-caption light-text">
-                    Who is so much of a moron to spend a week installing an operating system?
+                    Who is so much of a moron to spend over a week installing a usable operating system?
                 </h3>
                 <img width="100%" src={kumaGenlop} alt="Kuma Genlop Times" />
             </div>
