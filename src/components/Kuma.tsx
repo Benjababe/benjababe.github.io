@@ -26,7 +26,7 @@ export const KumaWidget = ({ showKuma, setShowKuma, trackEvent }: KumaWidgetProp
         trackEvent({
             category: "kuma-widget",
             action: "click-toggle",
-            value: (showKuma) ? "hide" : "show"
+            name: (showKuma) ? "hide" : "show"
         });
     };
 

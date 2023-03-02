@@ -51,7 +51,7 @@ const Header = ({ aboutRef, educationRef, experienceRef, projectsRef, trackEvent
         trackEvent({
             category: "header",
             action: "scroll-to",
-            value: ref.current.id
+            name: ref.current.id
         });
     };
 

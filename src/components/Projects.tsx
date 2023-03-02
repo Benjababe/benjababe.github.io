@@ -17,7 +17,7 @@ const Projects = ({ id, projectsRef, trackEvent }: ProjectsProps) => {
         trackEvent({
             category: "project",
             action: "click-toggle",
-            value: (expandProjects) ? "contract" : "expand"
+            name: (expandProjects) ? "contract" : "expand"
         });
     }
 
