@@ -7,7 +7,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 const instance = createInstance({
     urlBase: "https://matomo.benjababe.duckdns.org",
-    siteId: 1
+    siteId: 2
 });
 root.render(
     <>
