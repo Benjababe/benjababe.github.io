@@ -6,9 +6,10 @@ interface HeaderProps {
     educationRef: MutableRefObject<HTMLDivElement>;
     experienceRef: MutableRefObject<HTMLDivElement>;
     projectsRef: MutableRefObject<HTMLDivElement>;
+    trackEvent: Function;
 }
 
-const Header = ({ aboutRef, educationRef, experienceRef, projectsRef }: HeaderProps) => {
+const Header = ({ aboutRef, educationRef, experienceRef, projectsRef, trackEvent }: HeaderProps) => {
     const [activeCategory, setActiveCategory] = useState("about");
     const categoryRefs = [aboutRef, educationRef, experienceRef, projectsRef];
 
@@ -46,6 +47,12 @@ const Header = ({ aboutRef, educationRef, experienceRef, projectsRef }: HeaderPr
     const scrollTo = (ref: MutableRefObject<HTMLDivElement>) => {
         ref.current.style.scrollMargin = "5rem";    // header is 5rem tall
         ref.current.scrollIntoView({ behavior: "smooth" });
+
+        trackEvent({
+            category: "header",
+            action: "scroll-to",
+            value: ref.current.id
+        });
     };
 
     return (

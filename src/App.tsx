@@ -1,4 +1,5 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useMatomo } from "@jonkoops/matomo-tracker-react";
 import './assets/styles/App.css';
 
 import Header from "./components/Header";
@@ -17,21 +18,28 @@ function App() {
         experienceRef = useRef<HTMLDivElement>(null),
         projectsRef = useRef<HTMLDivElement>(null);
 
+    const { trackPageView, trackEvent } = useMatomo();
+
+    useEffect(() => {
+        trackPageView();
+    });
+
     return (
         <div className="app">
             <Header
                 aboutRef={aboutRef}
                 educationRef={educationRef}
                 experienceRef={experienceRef}
-                projectsRef={projectsRef} />
+                projectsRef={projectsRef}
+                trackEvent={trackEvent} />
 
             <div>
-                <KumaWidget showKuma={showKuma} setShowKuma={setShowKuma} />
+                <KumaWidget showKuma={showKuma} setShowKuma={setShowKuma} trackEvent={trackEvent} />
                 <About id="about" aboutRef={aboutRef} />
                 <Kuma showKuma={showKuma} />
                 <Education id="education" educationRef={educationRef} />
                 <Experience id="experience" experienceRef={experienceRef} />
-                <Projects id="projects" projectsRef={projectsRef} />
+                <Projects id="projects" projectsRef={projectsRef} trackEvent={trackEvent} />
             </div>
         </div>
     );

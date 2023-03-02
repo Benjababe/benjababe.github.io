@@ -5,13 +5,20 @@ import ProjectEntries from "./ProjectEntries";
 interface ProjectsProps {
     id: string;
     projectsRef: ForwardedRef<HTMLDivElement>;
+    trackEvent: Function;
 }
 
-const Projects = ({ id, projectsRef }: ProjectsProps) => {
+const Projects = ({ id, projectsRef, trackEvent }: ProjectsProps) => {
     const [expandProjects, setExpandProjects] = useState(false);
 
     const toggleProjects = () => {
         setExpandProjects(!expandProjects);
+
+        trackEvent({
+            category: "project",
+            action: "click-toggle",
+            value: (expandProjects) ? "contract" : "expand"
+        });
     }
 
     return (

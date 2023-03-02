@@ -12,15 +12,22 @@ import "../assets/styles/Kuma.css";
 interface KumaWidgetProps {
     showKuma: boolean;
     setShowKuma: React.Dispatch<React.SetStateAction<boolean>>;
+    trackEvent: Function;
 }
 
 interface KumaProps {
     showKuma: boolean;
 }
 
-export const KumaWidget = ({ showKuma, setShowKuma }: KumaWidgetProps) => {
+export const KumaWidget = ({ showKuma, setShowKuma, trackEvent }: KumaWidgetProps) => {
     const toggleKuma = () => {
         setShowKuma(!showKuma);
+
+        trackEvent({
+            category: "kuma-widget",
+            action: "click-toggle",
+            value: (showKuma) ? "hide" : "show"
+        });
     };
 
     return (
