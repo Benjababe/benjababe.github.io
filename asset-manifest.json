@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.54c7ac92.css",
-    "main.js": "/static/js/main.5d630fe9.js",
+    "main.js": "/static/js/main.9124708e.js",
     "static/media/kuma-pic-4.jpg": "/static/media/kuma-pic-4.800e7bb0ea437702af88.jpg",
     "static/media/kuma-pic-1.jpg": "/static/media/kuma-pic-1.b4514716d75a6d3d14bc.jpg",
     "static/media/kuma-pic-3.jpg": "/static/media/kuma-pic-3.a2ba2c8e8137867f04d7.jpg",
@@ -16,15 +16,15 @@
     "static/media/reddit-icon.svg": "/static/media/reddit-icon.b1868363dde00a7c2178ae8a3c8559bf.svg",
     "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.171001b536ab25e981a58e1ea76991dc.svg",
     "static/media/youtube-icon.svg": "/static/media/youtube-icon.24c60742e5c118c306be5d72ef119e62.svg",
-    "index.html": "/index.html",
     "static/media/github-icon.svg": "/static/media/github-icon.97ed8e7eef60d61ca469881dd6f34511.svg",
     "static/media/devpost-icon.svg": "/static/media/devpost-icon.fe97464d4e97dc0af91108156a42c247.svg",
     "static/media/expand-icon.svg": "/static/media/expand-icon.6d9c7e2ec4ef1cdb97c925b88dfeeb5b.svg",
+    "index.html": "/index.html",
     "main.54c7ac92.css.map": "/static/css/main.54c7ac92.css.map",
-    "main.5d630fe9.js.map": "/static/js/main.5d630fe9.js.map"
+    "main.9124708e.js.map": "/static/js/main.9124708e.js.map"
   },
   "entrypoints": [
     "static/css/main.54c7ac92.css",
-    "static/js/main.5d630fe9.js"
+    "static/js/main.9124708e.js"
   ]
 }
