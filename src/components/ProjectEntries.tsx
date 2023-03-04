@@ -154,12 +154,12 @@ const ProjectEntries = () => {
                 </ul>
             </ProjectEntry>
             <ProjectEntry
-                name="NotCafeDownloader"
+                name="GenericMangoDownloader"
                 type="CLI Application"
                 skills={["Python"]} >
                 <ul className="icon-container project-icon-container">
                     <li className="icon project-icon">
-                        <GithubIcon url="https://github.com/Benjababe/NotCafeDownloader" />
+                        <GithubIcon url="https://github.com/Benjababe/GenericMangoDownloader" />
                     </li>
                 </ul>
                 <ul className="project-desc">

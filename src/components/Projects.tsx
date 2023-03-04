@@ -15,7 +15,7 @@ const Projects = ({ id, projectsRef, trackEvent }: ProjectsProps) => {
         setExpandProjects(!expandProjects);
 
         trackEvent({
-            category: "project",
+            category: "self-projects",
             action: "click-toggle",
             name: (expandProjects) ? "contract" : "expand"
         });
