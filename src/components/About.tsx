@@ -25,7 +25,7 @@ const About = ({ id, aboutRef }: AboutProps) => {
                     <span className="title-alt">Goh</span>
                 </h1>
                 <h3>
-                    Aspiring Software Developer
+                    Aspiring Full-Stack Developer
                 </h3>
                 <div className="sub-title plain-text">
                     {"Singapore · "}

@@ -66,6 +66,23 @@ const ProjectEntries = () => {
                 </ul>
             </ProjectEntry>
             <ProjectEntry
+                name="GenericMangoDownloader"
+                type="CLI Application"
+                skills={["Python"]} >
+                <ul className="icon-container project-icon-container">
+                    <li className="icon project-icon">
+                        <GithubIcon url="https://github.com/Benjababe/GenericMangoDownloader" />
+                    </li>
+                </ul>
+                <ul className="project-desc">
+                    <li>Developed a CLI aggregate manga downloader with site specific features.</li>
+                    <li>Implemented publicly available APIs and a web scraper to retrieve information for image downloads.</li>
+                    <li>Constructed a modular system where extensions for additional websites can be written and integrated seamlessly</li>
+                    <li>Reverse engineered websites' JavaScript to include features not easily accessible to the average user</li>
+                    <li>Wrote a plentiful amount of unit tests to show, specifically, which features of which extension are currently not working</li>
+                </ul>
+            </ProjectEntry>
+            <ProjectEntry
                 name="CPP Video to ASCII"
                 type="CLI Application"
                 skills={["C++", "CMake", "OpenCV"]} >
@@ -151,23 +168,6 @@ const ProjectEntries = () => {
                 <ul className="project-desc">
                     <li>Developed a web game based off "Umineko no Naku Koro ni" where users try to survive as long as possible in a side scrolling shooter.</li>
                     <li>Project was made within my first 24 hours of being exposed to Unity.</li>
-                </ul>
-            </ProjectEntry>
-            <ProjectEntry
-                name="GenericMangoDownloader"
-                type="CLI Application"
-                skills={["Python"]} >
-                <ul className="icon-container project-icon-container">
-                    <li className="icon project-icon">
-                        <GithubIcon url="https://github.com/Benjababe/GenericMangoDownloader" />
-                    </li>
-                </ul>
-                <ul className="project-desc">
-                    <li>Developed a CLI aggregate manga downloader with site specific features.</li>
-                    <li>Implemented publicly available APIs and a web scraper to retrieve information for image downloads.</li>
-                    <li>Constructed a modular system where extensions for additional websites can be written and integrated seamlessly</li>
-                    <li>Reverse engineered websites' JavaScript to include features not easily accessible to the average user</li>
-                    <li>Ensured operational readiness with a plentiful amount of unit tests which are run before publishing</li>
                 </ul>
             </ProjectEntry>
             <ProjectEntry
