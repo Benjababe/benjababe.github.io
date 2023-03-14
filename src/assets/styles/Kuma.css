@@ -6,6 +6,7 @@
     transform: translate(-60%);
     cursor: pointer;
     transition: 0.3s;
+    z-index: 1;
 }
 
 .kuma-peek:hover {
