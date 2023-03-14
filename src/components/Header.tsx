@@ -1,4 +1,8 @@
 import { useState, useEffect, MutableRefObject } from "react";
+import aboutIcon from "../assets/images/icons/about-icon.svg";
+import educationIcon from "../assets/images/icons/education-icon.svg";
+import experienceIcon from "../assets/images/icons/experience-icon.svg";
+import projectIcon from "../assets/images/icons/project-icon.svg";
 import "../assets/styles/Header.css";
 
 interface HeaderProps {
@@ -56,20 +60,52 @@ const Header = ({ aboutRef, educationRef, experienceRef, projectsRef, trackEvent
     };
 
     return (
-        <nav className="nav-header">
-            <span
-                className={((activeCategory === "about") ? "active" : "") + " nav-link"}
-                onClick={() => scrollTo(aboutRef)}>About</span>
-            <span
-                className={((activeCategory === "education") ? "active" : "") + " nav-link"}
-                onClick={() => scrollTo(educationRef)}>Education</span>
-            <span
-                className={((activeCategory === "experience") ? "active" : "") + " nav-link"}
-                onClick={() => scrollTo(experienceRef)}>Experience</span>
-            <span
-                className={((activeCategory === "projects") ? "active" : "") + " nav-link"}
-                onClick={() => scrollTo(projectsRef)}>Projects</span>
-        </nav>
+        <>
+            <nav className="nav-header">
+                <span
+                    className={((activeCategory === "about") ? "active" : "") + " nav-link"}
+                    onClick={() => scrollTo(aboutRef)}>
+                    About
+                </span>
+                <span
+                    className={((activeCategory === "education") ? "active" : "") + " nav-link"}
+                    onClick={() => scrollTo(educationRef)}>
+                    Education
+                </span>
+                <span
+                    className={((activeCategory === "experience") ? "active" : "") + " nav-link"}
+                    onClick={() => scrollTo(experienceRef)}>
+                    Experience
+                </span>
+                <span
+                    className={((activeCategory === "projects") ? "active" : "") + " nav-link"}
+                    onClick={() => scrollTo(projectsRef)}>
+                    Projects
+                </span>
+            </nav>
+            <nav className="nav-header-mobile">
+                <span
+                    className={((activeCategory === "about") ? "active" : "") + " nav-link"}
+                    onClick={() => scrollTo(aboutRef)}>
+                    <img src={aboutIcon} alt="About Icon" />
+                </span>
+                <span
+                    className={((activeCategory === "education") ? "active" : "") + " nav-link"}
+                    onClick={() => scrollTo(educationRef)}>
+                    <img src={educationIcon} alt="Education Icon" />
+                </span>
+                <span
+                    className={((activeCategory === "experience") ? "active" : "") + " nav-link"}
+                    onClick={() => scrollTo(experienceRef)}>
+                    <img src={experienceIcon} alt="Experience Icon" />
+                </span>
+                <span
+                    className={((activeCategory === "projects") ? "active" : "") + " nav-link"}
+                    onClick={() => scrollTo(projectsRef)}>
+                    <img src={projectIcon} alt="Project Icon" />
+                </span>
+            </nav>
+        </>
     );
 };
 

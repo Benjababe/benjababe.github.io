@@ -146,6 +146,8 @@ img {
     transform: rotate(180deg);
 }
 
-.footer-container {
-    padding-bottom: 5rem;
+@media (max-width: 600px) {
+    .expand-container.expand {
+        transform: translateY(-60%);
+    }
 }
