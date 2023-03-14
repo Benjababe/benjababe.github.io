@@ -10,9 +10,10 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
     return (
         <section id={id} className="section" ref={experienceRef}>
             <h2>Experience</h2>
-            <ResumeEntry dateRange="May 2022 - Dec 2022">
+            <ResumeEntry
+                dateRange="May 2022 - Dec 2022"
+                title="Full-Stack Developer Intern">
                 <div className="resume-content">
-                    <h3>Full-Stack Developer Intern</h3>
                     <p className="light-text">FoodLine.SG | Singapore</p>
                     <ul className="light-text">
                         <li>Built software for funds transfer from the company's bank accounts via FAST/Remittance as well as to receive notifications of incoming payments.</li>
@@ -21,9 +22,10 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
                     </ul>
                 </div>
             </ResumeEntry>
-            <ResumeEntry dateRange="Apr 2016 - Sep 2016">
+            <ResumeEntry
+                dateRange="Apr 2016 - Sep 2016"
+                title="Research Assistant">
                 <div className="resume-content">
-                    <h3>Research Assistant</h3>
                     <p className="light-text">Institute for Infocomm Research | Singapore</p>
                     <ul className="light-text">
                         <li>Collaborated with 2 other developers to optimise call quality, speed and services massively over previous versions of the service</li>

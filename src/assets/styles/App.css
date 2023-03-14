@@ -61,12 +61,23 @@ img {
 }
 
 .resume-entry {
+    margin-bottom: 4rem;
+}
+
+.resume-entry-header {
     display: flex;
     flex-direction: row;
 }
 
-.resume-entry h3 {
-    margin-top: 0px;
+.resume-entry-title {
+    width: 100%;
+    margin-top: 0;
+}
+
+.resume-entry-date {
+    min-width: 15rem;
+    text-align: right;
+    margin-bottom: 0;
 }
 
 .resume-content {
@@ -81,11 +92,6 @@ img {
 .resume-content li {
     margin-top: 0.125rem;
     margin-bottom: 1rem;
-}
-
-.resume-entry-date {
-    min-width: 15rem;
-    text-align: right;
 }
 
 .projects-container {

@@ -25,7 +25,8 @@ const ProjectEntries = () => {
                     <li>Project made for iNTUition v9.0.</li>
                     <li>Developed a web application with a friend where users are able to find modules and rooms in NTU.</li>
                     <li>For the venues, users can filter them to find a vacant one given a day and time range.</li>
-                    <li>Worked on the frontend as well as the webscrapers.</li>
+                    <li>Worked primarily on the frontend as well as the webscrapers, handled some data models in django.</li>
+                    <li>Wrote a dockerfile for a streamlined environment setup on a fresh machine</li>
                 </ul>
             </ProjectEntry>
             <ProjectEntry
