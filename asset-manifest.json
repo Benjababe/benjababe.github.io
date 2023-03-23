@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.218d5d3f.css",
-    "main.js": "/static/js/main.e4f9d9bb.js",
+    "main.js": "/static/js/main.245721cf.js",
     "static/media/kuma-pic-4.jpg": "/static/media/kuma-pic-4.800e7bb0ea437702af88.jpg",
     "static/media/kuma-pic-1.jpg": "/static/media/kuma-pic-1.b4514716d75a6d3d14bc.jpg",
     "static/media/kuma-pic-3.jpg": "/static/media/kuma-pic-3.a2ba2c8e8137867f04d7.jpg",
@@ -25,10 +25,10 @@
     "static/media/education-icon.svg": "/static/media/education-icon.54defff3db2308fc8abacb39169644b8.svg",
     "static/media/experience-icon.svg": "/static/media/experience-icon.a5ec57ef2ba19b2ff503509a5af9d16c.svg",
     "main.218d5d3f.css.map": "/static/css/main.218d5d3f.css.map",
-    "main.e4f9d9bb.js.map": "/static/js/main.e4f9d9bb.js.map"
+    "main.245721cf.js.map": "/static/js/main.245721cf.js.map"
   },
   "entrypoints": [
     "static/css/main.218d5d3f.css",
-    "static/js/main.e4f9d9bb.js"
+    "static/js/main.245721cf.js"
   ]
 }
