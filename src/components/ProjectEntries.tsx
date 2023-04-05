@@ -69,7 +69,7 @@ const ProjectEntries = () => {
             <ProjectEntry
                 name="GenericMangoDownloader"
                 type="CLI Application"
-                skills={["Python"]} >
+                skills={["Python", "unittest"]} >
                 <ul className="icon-container project-icon-container">
                     <li className="icon project-icon">
                         <GithubIcon url="https://github.com/Benjababe/GenericMangoDownloader" />
@@ -119,6 +119,21 @@ const ProjectEntries = () => {
                 </ul>
             </ProjectEntry>
             <ProjectEntry
+                name="HLTV-CLI"
+                type="CLI Application"
+                skills={["C#", ".NET"]} >
+                <ul className="icon-container project-icon-container">
+                    <li className="icon project-icon">
+                        <GithubIcon url="https://github.com/Benjababe/HLTV-CLI" />
+                    </li>
+                </ul>
+                <ul className="project-desc">
+                    <li>A CLI client made for HLTV.org.</li>
+                    <li>Users are able to see player of the week, current & upcoming matches as well as forum threads.</li>
+                    <li>The live scoreboard of a ongoing match can also be viewed by users.</li>
+                </ul>
+            </ProjectEntry>
+            <ProjectEntry
                 name="NTU Kaltura Downloader"
                 type="Userscript"
                 skills={["Javascript"]} >
@@ -138,7 +153,7 @@ const ProjectEntries = () => {
             <ProjectEntry
                 name="IPGeoGuessr"
                 type="Web Game"
-                skills={["HTML", "JS", "CSS"]} >
+                skills={["HTML", "Javascript", "CSS"]} >
                 <ul className="icon-container project-icon-container">
                     <li className="icon project-icon">
                         <GithubIcon url="https://github.com/Benjababe/IPGeoGuessr" />
@@ -174,7 +189,7 @@ const ProjectEntries = () => {
             <ProjectEntry
                 name="Buldog Playsound Bot"
                 type="Online Bot"
-                skills={["NodeJS", "FFMPEG"]} >
+                skills={["NodeJS", "FFMPEG", "Javascript"]} >
                 <ul className="icon-container project-icon-container">
                     <li className="icon project-icon">
                         <GithubIcon url="https://github.com/Benjababe/Buldog-Playsound-Bot" />

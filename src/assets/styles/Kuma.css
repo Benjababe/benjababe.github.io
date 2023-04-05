@@ -7,6 +7,9 @@
     cursor: pointer;
     transition: 0.3s;
     z-index: 1;
+
+    /** hiding for reasons */
+    display: none;
 }
 
 .kuma-peek:hover {
