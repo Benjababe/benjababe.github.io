@@ -15,7 +15,7 @@ interface AboutProps {
 
 const About = ({ id, aboutRef }: AboutProps) => {
     return (
-        <section id={id} className="section" ref={aboutRef}>
+        <section id={id} className="section about" ref={aboutRef}>
             <div className="mugshot-container">
                 <img className="mugshot-img circle-dom" src={mugshot} alt="Mugshot Here"></img>
             </div>

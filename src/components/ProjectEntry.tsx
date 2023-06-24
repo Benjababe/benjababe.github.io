@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import "../assets/styles/App.css";
+import SkillsDisplay from "./SkillsDisplay";
 
 interface ProjectEntryProps {
     name: string;
@@ -16,7 +17,7 @@ const ProjectEntry = ({ name, type, skills, children }: ProjectEntryProps) => {
                 <div className="light-text">
                     {type}
                     <br />
-                    Skills: {skills.sort().join(", ")}
+                    <SkillsDisplay skills={skills} />
                 </div>
             </div>
             <div className="project-entry-info light-text">

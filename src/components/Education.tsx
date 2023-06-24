@@ -8,7 +8,7 @@ interface EducationProps {
 
 const Education = ({ id, educationRef }: EducationProps) => {
     return (
-        <section id={id} className="section" ref={educationRef}>
+        <section data-aos="fade-left" id={id} className="section" ref={educationRef}>
             <h2>Education</h2>
             <ResumeEntry
                 title="Bachelor of Engineering"

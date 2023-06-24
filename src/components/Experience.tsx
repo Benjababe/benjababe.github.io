@@ -1,5 +1,6 @@
 import { ForwardedRef } from "react";
 import ResumeEntry from "./ResumeEntry";
+import SkillsDisplay from "./SkillsDisplay";
 
 interface ExperienceProps {
     id: string;
@@ -8,13 +9,14 @@ interface ExperienceProps {
 
 const Experience = ({ id, experienceRef }: ExperienceProps) => {
     return (
-        <section id={id} className="section" ref={experienceRef}>
+        <section data-aos="fade-right" id={id} className="section" ref={experienceRef}>
             <h2>Experience</h2>
             <ResumeEntry
                 dateRange="May 2022 - Dec 2022"
                 title="Full-Stack Developer Intern">
                 <div className="resume-content">
                     <p className="light-text">FoodLine.SG | Singapore</p>
+                    <SkillsDisplay skills={["PHP", "CSS", "Javascript", "MySQL", "UNIX", "jQuery"]} />
                     <ul className="light-text">
                         <li>Built software for funds transfer from the company's bank accounts via FAST/Remittance as well as to receive notifications of incoming payments.</li>
                         <li>Improved subscription functionality to support manual recharging of customers through Braintree.</li>
@@ -30,7 +32,7 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
                     <ul className="light-text">
                         <li>Collaborated with 2 other developers to optimise call quality, speed and services massively over previous versions of the service</li>
                         <li>Improved efficiency of JavaScript code on client's website to significantly reduce initial load times</li>
-                        <li>Created and maintained a mySQL database for ease of accessibility for archived chat logs and video recordings</li>
+                        <li>Created and maintained a MySQL database for ease of accessibility for archived chat logs and video recordings</li>
                         <li>Converted web application code into a Java library for implementation for the Android application development</li>
                     </ul>
                 </div>

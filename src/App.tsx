@@ -9,6 +9,9 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import { Kuma, KumaWidget } from "./components/Kuma";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 function App() {
     const [showKuma, setShowKuma] = useState(false);
@@ -23,6 +26,13 @@ function App() {
     useEffect(() => {
         trackPageView();
     });
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
 
     return (
         <div className="app">
