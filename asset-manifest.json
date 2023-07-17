@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.343a9a7e.css",
-    "main.js": "/static/js/main.724b806b.js",
+    "main.js": "/static/js/main.69271c19.js",
     "static/media/kuma-pic-4.jpg": "/static/media/kuma-pic-4.800e7bb0ea437702af88.jpg",
     "static/media/kuma-pic-1.jpg": "/static/media/kuma-pic-1.b4514716d75a6d3d14bc.jpg",
     "static/media/kuma-pic-3.jpg": "/static/media/kuma-pic-3.a2ba2c8e8137867f04d7.jpg",
@@ -33,6 +33,7 @@
     "static/media/youtube-icon.svg": "/static/media/youtube-icon.24c60742e5c118c306be5d72ef119e62.svg",
     "static/media/javascript-icon.svg": "/static/media/javascript-icon.30666c5db928fc87ae5a498fce6f8dfc.svg",
     "static/media/github-icon.svg": "/static/media/github-icon.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "static/media/generic-icon.svg": "/static/media/generic-icon.c6b4699cdaa2959982adcb447edb0e12.svg",
     "static/media/socket.io-icon.svg": "/static/media/socket.io-icon.cf1b0d1ed24ea46b9dfcae6c9e603624.svg",
     "static/media/csharp-icon.svg": "/static/media/csharp-icon.f023a0a0aa6df02a2dea5515720ecf8b.svg",
     "static/media/webrtc-icon.svg": "/static/media/webrtc-icon.18c884f755fbb24f07eb46ba2c464c21.svg",
@@ -58,10 +59,10 @@
     "static/media/education-icon.svg": "/static/media/education-icon.54defff3db2308fc8abacb39169644b8.svg",
     "static/media/experience-icon.svg": "/static/media/experience-icon.a5ec57ef2ba19b2ff503509a5af9d16c.svg",
     "main.343a9a7e.css.map": "/static/css/main.343a9a7e.css.map",
-    "main.724b806b.js.map": "/static/js/main.724b806b.js.map"
+    "main.69271c19.js.map": "/static/js/main.69271c19.js.map"
   },
   "entrypoints": [
     "static/css/main.343a9a7e.css",
-    "static/js/main.724b806b.js"
+    "static/js/main.69271c19.js"
   ]
 }
