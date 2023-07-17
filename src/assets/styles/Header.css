@@ -20,6 +20,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
+    text-transform: capitalize;
     padding: 0.5rem 0 0.5rem 0;
     cursor: pointer;
     user-select: none;
@@ -27,6 +28,25 @@
 
 .nav-link.active {
     color: white;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0.125rem;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -0.25rem;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .nav-header-mobile {
