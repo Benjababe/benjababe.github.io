@@ -9,6 +9,7 @@ export { default as DotNETIcon } from './dotnet-icon.svg';
 export { default as DjangoIcon } from './django-icon.svg';
 export { default as ExpressIcon } from './express-icon.svg';
 export { default as FFmpegIcon } from './ffmpeg-icon.svg';
+export { default as GenericIcon } from './generic-icon.svg';
 export { default as GoIcon } from './go-icon.svg';
 export { default as gRPCIcon } from './grpc-icon.svg';
 export { default as HTMLIcon } from './html-icon.svg';

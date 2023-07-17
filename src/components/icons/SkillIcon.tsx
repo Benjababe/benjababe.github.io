@@ -179,9 +179,9 @@ const skills: Skill[] = [
 ];
 
 const SkillIcon = ({ name }: SkillIconProps) => {
-  const skill = skills.find((skill) => skill.name.includes(name.toLowerCase()));
+  let skill = skills.find((skill) => skill.name.includes(name.toLowerCase()));
 
-  if (!skill) return null;
+  if (!skill) skill = { name: [name], src: SkillIcons.GenericIcon, text: name };
 
   return (
     <div className="generic-skill-img-wrapper" data-text={skill.text}>
