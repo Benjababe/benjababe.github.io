@@ -1,15 +1,19 @@
-import resumeIcon from "../../assets/images/icons/resume-icon.svg";
+import resumeIcon from '../../assets/images/icons/resume-icon.svg';
 
 interface ResumeIconProps {
-    url: string;
+  url: string;
 }
 
 const ResumeIcon = ({ url }: ResumeIconProps) => {
-    return (
-        <a href={url} target="_blank" rel="noreferrer">
-            <img src={resumeIcon} alt="Resume Icon" style={{ background: "white" }}></img>
-        </a>
-    );
+  return (
+    <a href={url} target="_blank" rel="noreferrer">
+      <img
+        src={resumeIcon}
+        alt="Resume Icon"
+        style={{ background: 'white' }}
+      ></img>
+    </a>
+  );
 };
 
 export default ResumeIcon;
