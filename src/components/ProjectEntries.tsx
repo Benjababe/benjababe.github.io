@@ -153,7 +153,7 @@ const ProjectEntries = () => {
       <ProjectEntry
         name="WebM Widener"
         type="Recreational Tool"
-        skills={['Python', 'LibVPX', 'Pillow']}
+        skills={['Python', 'FFmpeg', 'Pillow']}
       >
         <ul className="icon-container project-icon-container">
           <li className="icon project-icon">

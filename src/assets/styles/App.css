@@ -1,3 +1,7 @@
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+
 html,
 body {
     background-color: rgb(30, 30, 30);
@@ -92,6 +96,39 @@ img {
 .resume-content li {
     margin-top: 0.125rem;
     margin-bottom: 1rem;
+}
+
+.skill-block {
+    display: flex;
+    column-gap: 0.5rem;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 1.25rem 1rem 1.25rem;
+    background-color: rgb(50, 50, 50);
+    overflow-x: auto;
+    height: max-content;
+}
+
+.generic-skill-img-wrapper {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    vertical-align: middle;
+    margin: auto 0.5rem auto 0.5rem;
+}
+
+.generic-skill-img-wrapper:hover::before {
+    font-size: small;
+    content: attr(data-text);
+    text-transform: capitalize;
+    position: absolute;
+    padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.85;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 1rem;
 }
 
 .projects-container {

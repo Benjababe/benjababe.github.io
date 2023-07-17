@@ -1,18 +1,22 @@
-import GenericSkillIcon from './icons/GenericSkillIcon';
+import SkillIcon from './icons/SkillIcon';
 
 interface SkillsProps {
   skills: string[];
 }
 
 const SkillsDisplay = ({ skills }: SkillsProps) => {
+  // sort skill alphabetically first
+  // then get the skill image
+  const imgArr = skills
+    .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+    .map((skill, i) => {
+      return <SkillIcon key={`skill-${i}`} name={skill} />;
+    });
+
   return (
-    <div className="light-text" style={{ display: 'inline-flex' }}>
+    <div className="light-text">
       <div>Skills:</div>
-      <div style={{ marginLeft: '0.75rem' }}>
-        {skills
-          .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
-          .join(', ')}
-      </div>
+      <div className="skill-block">{imgArr}</div>
     </div>
   );
 };

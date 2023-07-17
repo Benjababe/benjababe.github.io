@@ -35,12 +35,11 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
               'Python',
               'Azure',
               'Docker',
-              'WebRTC',
               'RabbitMQ',
             ]}
           />
           <ul className="light-text">
-            <li>
+            {/* <li>
               Restructured existing in-house video processing modules and
               OpenAI&apos;s whisper model into microservices as well as ensuring
               smooth deployment on Azure
@@ -52,7 +51,8 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
             <li>
               Developed the backend for &quot;Sincere API&quot; and the frontend
               for data labelling.
-            </li>
+            </li> */}
+            <li>Work in progress...</li>
           </ul>
         </div>
       </ResumeEntry>
