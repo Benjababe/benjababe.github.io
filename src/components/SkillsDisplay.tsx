@@ -15,8 +15,10 @@ const SkillsDisplay = ({ skills }: SkillsProps) => {
 
   return (
     <div className="light-text">
-      <div>Skills:</div>
-      <div className="skill-block">{imgArr}</div>
+      <div className="skill-block">
+        <div className="skill-description">{skills.join(' ')}</div>
+        {imgArr}
+      </div>
     </div>
   );
 };

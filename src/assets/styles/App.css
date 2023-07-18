@@ -106,6 +106,15 @@ img {
     background-color: rgb(50, 50, 50);
     overflow-x: auto;
     height: max-content;
+    border-radius: 0.5rem;
+}
+
+.skill-description {
+    height: 0;
+    width: 0;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
 }
 
 .generic-skill-img-wrapper {
