@@ -104,7 +104,7 @@ img {
     margin: 1rem 0 1rem 0;
     padding: 1rem 1.25rem 1rem 1.25rem;
     background-color: rgb(50, 50, 50);
-    overflow-x: auto;
+    overflow-x: visible;
     height: max-content;
     border-radius: 0.5rem;
 }
@@ -123,6 +123,11 @@ img {
     width: 2.5rem;
     vertical-align: middle;
     margin: auto 0.5rem auto 0.5rem;
+    transition: transform 0.25s ease-in-out;
+}
+
+.generic-skill-img-wrapper:hover {
+    transform: scale(1.2);
 }
 
 .generic-skill-img-wrapper:hover::before {
