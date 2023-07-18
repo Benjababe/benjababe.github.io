@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.343a9a7e.css",
-    "main.js": "/static/js/main.69271c19.js",
+    "main.css": "/static/css/main.749f3e3f.css",
+    "main.js": "/static/js/main.78ca9d04.js",
     "static/media/kuma-pic-4.jpg": "/static/media/kuma-pic-4.800e7bb0ea437702af88.jpg",
     "static/media/kuma-pic-1.jpg": "/static/media/kuma-pic-1.b4514716d75a6d3d14bc.jpg",
     "static/media/kuma-pic-3.jpg": "/static/media/kuma-pic-3.a2ba2c8e8137867f04d7.jpg",
@@ -58,11 +58,11 @@
     "static/media/cmake-icon.svg": "/static/media/cmake-icon.e03c305ef4da072653726e4c51e1c839.svg",
     "static/media/education-icon.svg": "/static/media/education-icon.54defff3db2308fc8abacb39169644b8.svg",
     "static/media/experience-icon.svg": "/static/media/experience-icon.a5ec57ef2ba19b2ff503509a5af9d16c.svg",
-    "main.343a9a7e.css.map": "/static/css/main.343a9a7e.css.map",
-    "main.69271c19.js.map": "/static/js/main.69271c19.js.map"
+    "main.749f3e3f.css.map": "/static/css/main.749f3e3f.css.map",
+    "main.78ca9d04.js.map": "/static/js/main.78ca9d04.js.map"
   },
   "entrypoints": [
-    "static/css/main.343a9a7e.css",
-    "static/js/main.69271c19.js"
+    "static/css/main.749f3e3f.css",
+    "static/js/main.78ca9d04.js"
   ]
 }
