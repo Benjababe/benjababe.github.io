@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, RefObject } from 'react';
 import Draggable, { DraggableData, DraggableEvent } from 'react-draggable';
 import BasePet, { PetState, PetType } from './BasePet';
-import Rabbit from './pets/Rabbit';
+import Bunny from './pets/Bunny';
 
 interface PetProps {
   containerRef: RefObject<HTMLDivElement>;
@@ -20,8 +20,8 @@ interface Rect {
 
 const getPet = (petType: PetType): BasePet => {
   switch (petType) {
-    case PetType.Rabbit:
-      return new Rabbit();
+    case PetType.Bunny:
+      return new Bunny();
   }
 };
 

@@ -1,5 +1,5 @@
 export enum PetType {
-  Rabbit,
+  Bunny = 'Bunny',
 }
 
 export enum PetState {

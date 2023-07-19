@@ -1,11 +1,11 @@
 import BasePet, { PetState } from '../BasePet';
-import idleAnim from '../../../assets/media/pets/rabbit/idle.gif';
-import movingLAnim from '../../../assets/media/pets/rabbit/moving-left.gif';
-import movingRAnim from '../../../assets/media/pets/rabbit/moving-right.gif';
-import fallingAsleepAnim from '../../../assets/media/pets/rabbit/falling-asleep.gif';
-import sleepingAnim from '../../../assets/media/pets/rabbit/sleeping.gif';
+import idleAnim from '../../../assets/media/pets/bunny/idle.gif';
+import movingLAnim from '../../../assets/media/pets/bunny/moving-left.gif';
+import movingRAnim from '../../../assets/media/pets/bunny/moving-right.gif';
+import fallingAsleepAnim from '../../../assets/media/pets/bunny/falling-asleep.gif';
+import sleepingAnim from '../../../assets/media/pets/bunny/sleeping.gif';
 
-class Rabbit extends BasePet {
+class Bunny extends BasePet {
   constructor() {
     super();
 
@@ -31,4 +31,4 @@ class Rabbit extends BasePet {
   }
 }
 
-export default Rabbit;
+export default Bunny;
