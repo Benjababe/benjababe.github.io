@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f488f8ef.css",
-    "main.js": "/static/js/main.c98360e0.js",
+    "main.css": "/static/css/main.828b2ecb.css",
+    "main.js": "/static/js/main.032c1e56.js",
     "static/media/kuma-pic-4.jpg": "/static/media/kuma-pic-4.800e7bb0ea437702af88.jpg",
     "static/media/kuma-pic-1.jpg": "/static/media/kuma-pic-1.b4514716d75a6d3d14bc.jpg",
     "static/media/kuma-pic-3.jpg": "/static/media/kuma-pic-3.a2ba2c8e8137867f04d7.jpg",
@@ -10,6 +10,8 @@
     "static/media/kuma-pic-2.jpg": "/static/media/kuma-pic-2.5165a61989542f419c4d.jpg",
     "static/media/kuma-peek.png": "/static/media/kuma-peek.e871cf6782a856d85512.png",
     "static/media/mugshot.jpg": "/static/media/mugshot.61cd66de1a9d80ebf7f8.jpg",
+    "static/media/moving-left.gif": "/static/media/moving-left.e747128ea259e2230938.gif",
+    "static/media/sleeping.gif": "/static/media/sleeping.f7016855b85d83ad3cf4.gif",
     "static/media/grpc-icon.svg": "/static/media/grpc-icon.9a4bd7dd20d6ab9e5acfc2f120a91182.svg",
     "static/media/nestjs-icon.svg": "/static/media/nestjs-icon.f4206064287ca35d8b1eb77003499762.svg",
     "static/media/linux-icon.svg": "/static/media/linux-icon.8ac401ec239c4fcf3309b51e56e44bd9.svg",
@@ -58,11 +60,11 @@
     "static/media/cmake-icon.svg": "/static/media/cmake-icon.e03c305ef4da072653726e4c51e1c839.svg",
     "static/media/education-icon.svg": "/static/media/education-icon.54defff3db2308fc8abacb39169644b8.svg",
     "static/media/experience-icon.svg": "/static/media/experience-icon.a5ec57ef2ba19b2ff503509a5af9d16c.svg",
-    "main.f488f8ef.css.map": "/static/css/main.f488f8ef.css.map",
-    "main.c98360e0.js.map": "/static/js/main.c98360e0.js.map"
+    "main.828b2ecb.css.map": "/static/css/main.828b2ecb.css.map",
+    "main.032c1e56.js.map": "/static/js/main.032c1e56.js.map"
   },
   "entrypoints": [
-    "static/css/main.f488f8ef.css",
-    "static/js/main.c98360e0.js"
+    "static/css/main.828b2ecb.css",
+    "static/js/main.032c1e56.js"
   ]
 }
