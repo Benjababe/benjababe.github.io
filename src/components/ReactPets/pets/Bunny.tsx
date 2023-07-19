@@ -17,7 +17,8 @@ class Bunny extends BasePet {
       PetState.Sleeping,
     ];
 
-    this.spriteHeight = 74;
+    // actual height is 74 but reduced because of bottom padding
+    this.spriteHeight = 68;
     this.spriteWidth = 55;
 
     this.moveSpeed = 1;

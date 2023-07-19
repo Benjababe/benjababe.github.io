@@ -2,9 +2,12 @@
 
 A site?
 
-## Resources
+## Sprites
 
 - [Bunny Sprite](https://hredbird.itch.io/bunny-sprite-sheet)
+- [Cat Sprite](https://bowpixel.itch.io/one-cat)
+
+## Icons
 
 - [Devpost Icon](https://devpost.com/software/devpost-follow-buttons-social-icons)
 - [Github Icon](https://github.com/logos)

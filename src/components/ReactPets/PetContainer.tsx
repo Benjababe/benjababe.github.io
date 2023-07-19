@@ -15,7 +15,24 @@ const PetContainer = ({ overlay }: PetContainerProps) => {
       ref={containerRef}
       className={overlay ? 'pet-container-overlay' : 'pet-container'}
     >
-      <Pet containerRef={containerRef} petType={PetType.Bunny}></Pet>
+      <Pet
+        containerRef={containerRef}
+        petType={PetType.Bunny}
+        movementIntervalMs={5}
+        stateUpdateIntervalMs={4000}
+      />
+      <Pet
+        containerRef={containerRef}
+        petType={PetType.Bunny}
+        movementIntervalMs={5}
+        stateUpdateIntervalMs={6000}
+      />
+      <Pet
+        containerRef={containerRef}
+        petType={PetType.Cat}
+        movementIntervalMs={5}
+        stateUpdateIntervalMs={5000}
+      />
     </div>
   );
 };

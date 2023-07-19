@@ -13,5 +13,6 @@
 }
 
 .pet {
+    position: absolute;
     cursor: pointer;
 }
