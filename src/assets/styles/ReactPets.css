@@ -9,7 +9,12 @@
 }
 
 .pet-container {
+    text-align: initial;
+    position: relative;
+    left: 50%;
     width: 20rem;
+    min-height: 5rem;
+    transform: translateX(-50%);
 }
 
 .pet {

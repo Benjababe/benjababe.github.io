@@ -18,14 +18,13 @@ const About = ({ id, aboutRef }: AboutProps) => {
   return (
     <section id={id} className="section about" ref={aboutRef}>
       <div className="mugshot-container">
-        <PetContainer overlay={true} />
-
         <img
           className="mugshot-img circle-dom"
           src={mugshot}
           alt="Mugshot Here"
         ></img>
       </div>
+      <PetContainer overlay={false} />
       <div className="desc-container">
         <h1 className="title-name">
           {'Benjamin '}

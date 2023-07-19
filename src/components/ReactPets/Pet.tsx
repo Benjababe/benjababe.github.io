@@ -130,7 +130,6 @@ const Pet = ({
         const maxX = (containerRect.width * 3) / 8 - 1;
         const newTargetX = Math.floor(Math.random() * (maxX - minX));
         setTargetX(newTargetX);
-        console.log(newTargetX);
 
         petImgRef.current.src = petInfo.movingLAnim;
         break;
@@ -142,7 +141,6 @@ const Pet = ({
         const maxX = containerRect.width - petInfo.spriteWidth;
         const newTargetX = Math.floor(Math.random() * (maxX - minX) + minX);
         setTargetX(newTargetX);
-        console.log(newTargetX);
 
         petImgRef.current.src = petInfo.movingRAnim;
         break;
