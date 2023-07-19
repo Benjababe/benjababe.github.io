@@ -1,0 +1,17 @@
+.pet-container-overlay {
+    text-align: initial;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 12rem;
+    width: 30rem;
+    transform: translateX(-50%);
+}
+
+.pet-container {
+    width: 20rem;
+}
+
+.pet {
+    cursor: pointer;
+}

@@ -5,7 +5,9 @@
 }
 
 .mugshot-container {
+    position: relative;
     margin-top: 4rem;
+    padding-bottom: 8rem;
     text-align: center;
 }
 
@@ -16,12 +18,14 @@
 }
 
 .desc-container {
+    margin-top: 0;
     text-align: center;
 }
 
 .title-name {
     text-align: center;
     font-size: 4rem;
+    margin-top: 0;
     margin-bottom: 0.25rem;
 }
 

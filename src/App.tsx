@@ -15,10 +15,10 @@ import 'aos/dist/aos.css';
 function App() {
   const [showKuma, setShowKuma] = useState(false);
 
-  const aboutRef = useRef<HTMLDivElement>(null),
-    educationRef = useRef<HTMLDivElement>(null),
-    experienceRef = useRef<HTMLDivElement>(null),
-    projectsRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const educationRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
 
   const { trackPageView, trackEvent } = useMatomo();
 

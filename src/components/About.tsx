@@ -7,6 +7,7 @@ import resume from '../assets/pdf/resume.pdf';
 import GithubIcon from './icons/GithubIcon';
 import LinkedInIcon from './icons/LinkedInIcon';
 import ResumeIcon from './icons/ResumeIcon';
+import PetContainer from './ReactPets/PetContainer';
 
 interface AboutProps {
   id: string;
@@ -17,6 +18,8 @@ const About = ({ id, aboutRef }: AboutProps) => {
   return (
     <section id={id} className="section about" ref={aboutRef}>
       <div className="mugshot-container">
+        <PetContainer overlay={true} />
+
         <img
           className="mugshot-img circle-dom"
           src={mugshot}
