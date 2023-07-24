@@ -6,6 +6,7 @@ A site?
 
 - [Bunny Sprite](https://hredbird.itch.io/bunny-sprite-sheet)
 - [Cat Sprite](https://bowpixel.itch.io/one-cat)
+- [Dog Sprite](https://yggdrazzil.itch.io/dog)
 
 ## Icons
 
