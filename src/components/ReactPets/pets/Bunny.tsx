@@ -29,6 +29,8 @@ class Bunny extends BasePet {
     this.movingRAnim = movingRAnim;
     this.fallingAsleepAnim = fallingAsleepAnim;
     this.sleepingAnim = sleepingAnim;
+
+    this.fallingAsleepDelayMs = 2000;
   }
 }
 

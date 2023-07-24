@@ -1,12 +1,13 @@
-import { useState, useEffect, useRef, RefObject } from 'react';
+import { useState, useEffect, useRef, RefObject, ReactElement } from 'react';
 import Draggable, { DraggableData, DraggableEvent } from 'react-draggable';
 import BasePet, { PetState, PetType } from './BasePet';
 import Bunny from './pets/Bunny';
 import Cat from './pets/Cat';
+import Dog from './pets/Dog';
 
 interface PetProps {
   /** React.Ref of the container of the pet */
-  containerRef: RefObject<HTMLDivElement>;
+  containerRef?: RefObject<HTMLDivElement>;
 
   /** Predefined pet type */
   petType: PetType;
@@ -34,6 +35,8 @@ const getPet = (petType: PetType): BasePet => {
       return new Bunny();
     case PetType.Cat:
       return new Cat();
+    case PetType.Dog:
+      return new Dog();
   }
 };
 
@@ -42,7 +45,7 @@ const Pet = ({
   petType,
   movementIntervalMs: movementInterval,
   stateUpdateIntervalMs: stateUpdateInterval,
-}: PetProps) => {
+}: PetProps): ReactElement => {
   const petImgRef = useRef<HTMLImageElement>(null);
   const [petState, setPetState] = useState<PetState>(PetState.Idle);
   const [position, setPosition] = useState<Position>({ x: 0, y: 100 });
@@ -106,9 +109,9 @@ const Pet = ({
     let newPetState = petInfo.getRandomState();
     while (
       (newPetState === PetState.MovingL &&
-        position.x <= containerRect.width / 4) ||
+        position.x <= containerRect.width / 6) ||
       (newPetState === PetState.MovingR &&
-        position.x >= (containerRect.width * 3) / 4 - petInfo.spriteWidth)
+        position.x >= (containerRect.width * 5) / 6 - petInfo.spriteWidth)
     ) {
       newPetState = petInfo.getRandomState();
     }
@@ -137,7 +140,7 @@ const Pet = ({
 
       // Moving right, find a x coordinate 3/8 torwards the right side
       case PetState.MovingR: {
-        const minX = (containerRect.width * 5) / 8 - petInfo.spriteWidth + 1;
+        const minX = (containerRect.width * 3) / 8 - petInfo.spriteWidth + 1;
         const maxX = containerRect.width - petInfo.spriteWidth;
         const newTargetX = Math.floor(Math.random() * (maxX - minX) + minX);
         setTargetX(newTargetX);
@@ -152,7 +155,7 @@ const Pet = ({
           petImgRef.current.src = petInfo.fallingAsleepAnim;
           setTimeout(() => {
             petImgRef.current.src = petInfo.sleepingAnim;
-          }, 2000);
+          }, petInfo.fallingAsleepDelayMs);
         } else {
           petImgRef.current.src = petInfo.sleepingAnim;
         }
@@ -172,6 +175,7 @@ const Pet = ({
     const maxX = containerRef.current.clientWidth - petInfo.spriteWidth - 1;
     const initX = Math.floor(Math.random() * (maxX - minX));
     setPosition({ ...position, x: initX });
+    setTargetX(initX);
   }, [containerRef.current]);
 
   // On container or pet change, update movement loop

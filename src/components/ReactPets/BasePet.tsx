@@ -1,6 +1,7 @@
 export enum PetType {
   Bunny = 'Bunny',
   Cat = 'Cat',
+  Dog = 'Dog',
 }
 
 export enum PetState {
@@ -33,6 +34,8 @@ class BasePet {
   movingRAnim: string;
   fallingAsleepAnim: string;
   sleepingAnim: string;
+
+  fallingAsleepDelayMs: number;
 
   /**
    * Gets a random pet state, may be duplicate from the current state

@@ -1,38 +1,27 @@
-import { useRef } from 'react';
+import { cloneElement, ReactElement, ReactNode, useRef } from 'react';
 import '../../assets/styles/ReactPets.css';
-import Pet from './Pet';
-import { PetType } from './BasePet';
 
 interface PetContainerProps {
   overlay: boolean;
+  children?: ReactNode[];
 }
 
-const PetContainer = ({ overlay }: PetContainerProps) => {
+const PetContainer = ({ overlay, children }: PetContainerProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const updatedChildren = children.map((child, i) => {
+    return cloneElement(child as ReactElement, {
+      key: `pet-${i}`,
+      containerRef: containerRef,
+    });
+  });
 
   return (
     <div
       ref={containerRef}
       className={overlay ? 'pet-container-overlay' : 'pet-container'}
     >
-      <Pet
-        containerRef={containerRef}
-        petType={PetType.Bunny}
-        movementIntervalMs={5}
-        stateUpdateIntervalMs={4000}
-      />
-      <Pet
-        containerRef={containerRef}
-        petType={PetType.Bunny}
-        movementIntervalMs={5}
-        stateUpdateIntervalMs={6000}
-      />
-      <Pet
-        containerRef={containerRef}
-        petType={PetType.Cat}
-        movementIntervalMs={5}
-        stateUpdateIntervalMs={5000}
-      />
+      {updatedChildren}
     </div>
   );
 };

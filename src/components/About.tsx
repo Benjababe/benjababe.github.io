@@ -1,4 +1,4 @@
-import { ForwardedRef } from 'react';
+import { ForwardedRef, ReactElement } from 'react';
 import '../assets/styles/About.css';
 
 import mugshot from '../assets/images/mugshot.jpg';
@@ -8,13 +8,15 @@ import GithubIcon from './icons/GithubIcon';
 import LinkedInIcon from './icons/LinkedInIcon';
 import ResumeIcon from './icons/ResumeIcon';
 import PetContainer from './ReactPets/PetContainer';
+import { PetType } from './ReactPets/BasePet';
+import Pet from './ReactPets/Pet';
 
 interface AboutProps {
   id: string;
   aboutRef: ForwardedRef<HTMLDivElement>;
 }
 
-const About = ({ id, aboutRef }: AboutProps) => {
+const About = ({ id, aboutRef }: AboutProps): ReactElement => {
   return (
     <section id={id} className="section about" ref={aboutRef}>
       <div className="mugshot-container">
@@ -24,7 +26,23 @@ const About = ({ id, aboutRef }: AboutProps) => {
           alt="Mugshot Here"
         ></img>
       </div>
-      <PetContainer overlay={false} />
+      <PetContainer overlay={false}>
+        <Pet
+          petType={PetType.Cat}
+          movementIntervalMs={5}
+          stateUpdateIntervalMs={2500}
+        />
+        <Pet
+          petType={PetType.Dog}
+          movementIntervalMs={5}
+          stateUpdateIntervalMs={3000}
+        />
+        <Pet
+          petType={PetType.Bunny}
+          movementIntervalMs={5}
+          stateUpdateIntervalMs={6000}
+        />
+      </PetContainer>
       <div className="desc-container">
         <h1 className="title-name">
           {'Benjamin '}
