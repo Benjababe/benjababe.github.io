@@ -36,6 +36,8 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
               'Azure',
               'Docker',
               'RabbitMQ',
+              'C#',
+              'WebRTC',
             ]}
           />
           <ul className="light-text">

@@ -1,3 +1,4 @@
+import ScrollContainer from 'react-indiana-drag-scroll';
 import SkillIcon from './icons/SkillIcon';
 
 interface SkillsProps {
@@ -15,10 +16,10 @@ const SkillsDisplay = ({ skills }: SkillsProps) => {
 
   return (
     <div className="light-text">
-      <div className="skill-block">
+      <ScrollContainer horizontal={true}>
         <div className="skill-description">{skills.join(' ')}</div>
-        {imgArr}
-      </div>
+        <div className="skill-block">{imgArr}</div>
+      </ScrollContainer>
     </div>
   );
 };
