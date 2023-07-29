@@ -38,6 +38,7 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
               'RabbitMQ',
               'C#',
               'WebRTC',
+              'OpenAPI',
             ]}
           />
           <ul className="light-text">
@@ -50,8 +51,12 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
               proxy server, front and backend.
             </li>
             <li>
-              Ensured proper deployment of all web services on Azure Container
+              Set up proper deployment of all web services on Azure Container
               Apps and Virtual Machine instances.
+            </li>
+            <li>
+              Ensured important code blocks, endpoints and functions were well
+              documented for code cleanliness and maintenance.
             </li>
           </ul>
         </div>

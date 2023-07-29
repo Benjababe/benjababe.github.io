@@ -22,6 +22,7 @@ export { default as MySQLIcon } from './mysql-icon.svg';
 export { default as NestJSIcon } from './nestjs-icon.svg';
 export { default as NextJSIcon } from './nextjs-icon.svg';
 export { default as NodeJSIcon } from './nodejs-icon.svg';
+export { default as OpenAIIcon } from './openapi-icon.svg';
 export { default as OpenCVIcon } from './opencv-icon.svg';
 export { default as PHPIcon } from './php-icon.svg';
 export { default as PostgreSQLIcon } from './postgresql-icon.svg';

@@ -127,6 +127,11 @@ const skills: Skill[] = [
     text: 'NodeJS',
   },
   {
+    name: ['openapi'],
+    src: SkillIcons.OpenAIIcon,
+    text: 'OpenAPI',
+  },
+  {
     name: ['opencv'],
     src: SkillIcons.OpenCVIcon,
     text: 'OpenCV',
