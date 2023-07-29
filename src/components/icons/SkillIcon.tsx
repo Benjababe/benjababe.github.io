@@ -152,9 +152,9 @@ const skills: Skill[] = [
     text: 'RabbitMQ',
   },
   {
-    name: ['react', 'reactjs', 'react.js'],
+    name: ['reactjs', 'react.js'],
     src: SkillIcons.ReactIcon,
-    text: 'React',
+    text: 'ReactJS',
   },
   {
     name: ['socketio', 'socket.io'],

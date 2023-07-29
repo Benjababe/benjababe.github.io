@@ -12,7 +12,7 @@ const ProjectEntries = () => {
       <ProjectEntry
         name="NTUMods"
         type="Web Application"
-        skills={['ReactJS', 'django', 'postgresql']}
+        skills={['ReactJS', 'django', 'postgresql', 'Docker']}
       >
         <ul className="icon-container project-icon-container">
           <li className="icon project-icon">
@@ -35,10 +35,6 @@ const ProjectEntries = () => {
           <li>
             Worked primarily on the frontend as well as the webscrapers, handled
             some data models in django.
-          </li>
-          <li>
-            Wrote a dockerfile for a streamlined environment setup on a fresh
-            machine
           </li>
         </ul>
       </ProjectEntry>

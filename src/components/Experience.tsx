@@ -41,20 +41,18 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
             ]}
           />
           <ul className="light-text">
-            {/* <li>
+            <li>
               Restructured existing in-house video processing modules and
-              OpenAI&apos;s whisper model into microservices as well as ensuring
-              smooth deployment on Azure
+              OpenAI&apos;s whisper model into gRPC/REST microservices.
             </li>
             <li>
-              Built the pipeline for the microservices consisting of a frontend,
-              backend and a proxy server.
+              Built a pipeline for video upload and processing consisting of a
+              proxy server, front and backend.
             </li>
             <li>
-              Developed the backend for &quot;Sincere API&quot; and the frontend
-              for data labelling.
-            </li> */}
-            <li>Work in progress...</li>
+              Ensured proper deployment of all web services on Azure Container
+              Apps and Virtual Machine instances.
+            </li>
           </ul>
         </div>
       </ResumeEntry>
