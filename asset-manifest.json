@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.285c7f51.css",
-    "main.js": "/static/js/main.2d6fd907.js",
+    "main.js": "/static/js/main.e34cb0aa.js",
     "static/media/kuma-pic-4.jpg": "/static/media/kuma-pic-4.800e7bb0ea437702af88.jpg",
     "static/media/kuma-pic-1.jpg": "/static/media/kuma-pic-1.b4514716d75a6d3d14bc.jpg",
     "static/media/kuma-pic-3.jpg": "/static/media/kuma-pic-3.a2ba2c8e8137867f04d7.jpg",
@@ -16,6 +16,7 @@
     "static/media/nestjs-icon.svg": "/static/media/nestjs-icon.f4206064287ca35d8b1eb77003499762.svg",
     "static/media/linux-icon.svg": "/static/media/linux-icon.8ac401ec239c4fcf3309b51e56e44bd9.svg",
     "static/media/postgresql-icon.svg": "/static/media/postgresql-icon.c6a787ec1736769983906540856fbc9e.svg",
+    "static/media/openapi-icon.svg": "/static/media/openapi-icon.e6e8d8c4ab1fe78190f83ff2b45a8379.svg",
     "static/media/mysql-icon.svg": "/static/media/mysql-icon.7cbc3bb3b18080ef358816e42d3021d7.svg",
     "static/media/jquery-icon.svg": "/static/media/jquery-icon.9443da5eb8f7d10f5f9593ef69c7232a.svg",
     "static/media/react-icon.svg": "/static/media/react-icon.9bad0300d6145ff8fcef042dd1b91c22.svg",
@@ -61,10 +62,10 @@
     "static/media/education-icon.svg": "/static/media/education-icon.54defff3db2308fc8abacb39169644b8.svg",
     "static/media/experience-icon.svg": "/static/media/experience-icon.a5ec57ef2ba19b2ff503509a5af9d16c.svg",
     "main.285c7f51.css.map": "/static/css/main.285c7f51.css.map",
-    "main.2d6fd907.js.map": "/static/js/main.2d6fd907.js.map"
+    "main.e34cb0aa.js.map": "/static/js/main.e34cb0aa.js.map"
   },
   "entrypoints": [
     "static/css/main.285c7f51.css",
-    "static/js/main.2d6fd907.js"
+    "static/js/main.e34cb0aa.js"
   ]
 }
