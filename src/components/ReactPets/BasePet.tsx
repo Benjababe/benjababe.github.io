@@ -38,6 +38,32 @@ class BasePet {
   fallingAsleepDelayMs: number;
 
   /**
+   * Loads in animation images beforehand as they may not be ready sometimes
+   */
+  async preloadAnimations() {
+    const images = [
+      this.idleAnim,
+      this.movingLAnim,
+      this.movingRAnim,
+      this.fallingAsleepAnim,
+      this.sleepingAnim,
+    ];
+
+    const promises = images
+      .filter((src) => src !== null && src !== undefined)
+      .map((src) => {
+        return new Promise((res, rej) => {
+          const img = new Image();
+          img.src = src;
+          img.onload = res;
+          img.onerror = rej;
+        });
+      });
+
+    await Promise.all(promises);
+  }
+
+  /**
    * Gets a random pet state, may be duplicate from the current state
    * @returns Random pet state
    */

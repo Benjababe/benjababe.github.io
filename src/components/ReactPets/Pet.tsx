@@ -166,6 +166,7 @@ const Pet = ({
 
   // On container change, reinitialise pet
   useEffect(() => {
+    petInfo.preloadAnimations();
     setPetState(PetState.Falling);
     setContainerRect({
       height: containerRef.current.clientHeight,
