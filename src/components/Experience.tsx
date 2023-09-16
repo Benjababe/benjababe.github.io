@@ -47,16 +47,16 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
               OpenAI&apos;s whisper model into gRPC/REST microservices.
             </li>
             <li>
-              Built a pipeline for video upload and processing consisting of a
-              proxy server, front and backend.
+              Constructed a pipeline for video upload and processing consisting
+              of a Golang proxy server, ReactJS frontend and NestJS backend.
             </li>
             <li>
-              Set up proper deployment of all web services on Azure Container
+              Secured proper deployment of all web services on Azure Container
               Apps and Virtual Machine instances.
             </li>
             <li>
-              Ensured important code blocks, endpoints and functions were well
-              documented for code cleanliness and maintenance.
+              Ensured proper documentation was written and code quality was
+              maintained throughout all commits.
             </li>
           </ul>
         </div>
@@ -81,8 +81,9 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
               of customers through Braintree.
             </li>
             <li>
-              General improvements to the website for customers and staff
-              including a multitude of optimisations for the existing codebase.
+              Multitude of improvements to internal pages, supporting 6
+              departments, and external customer pages consisting of code speed
+              up, general feature implementations and bug fixes.
             </li>
           </ul>
         </div>
