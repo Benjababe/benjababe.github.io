@@ -16,8 +16,8 @@ function App() {
   const [showKuma, setShowKuma] = useState(false);
 
   const aboutRef = useRef<HTMLDivElement>(null);
-  const educationRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
+  const educationRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
 
   const { trackPageView, trackEvent } = useMatomo();
@@ -51,8 +51,8 @@ function App() {
         />
         <About id="about" aboutRef={aboutRef} />
         <Kuma showKuma={showKuma} />
-        <Education id="education" educationRef={educationRef} />
         <Experience id="experience" experienceRef={experienceRef} />
+        <Education id="education" educationRef={educationRef} />
         <Projects
           id="projects"
           projectsRef={projectsRef}

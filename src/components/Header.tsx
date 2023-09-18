@@ -16,13 +16,13 @@ interface HeaderProps {
 
 const Header = ({
   aboutRef,
-  educationRef,
   experienceRef,
+  educationRef,
   projectsRef,
   trackEvent,
 }: HeaderProps) => {
   const [activeCategory, setActiveCategory] = useState('about');
-  const categoryRefs = [aboutRef, educationRef, experienceRef, projectsRef];
+  const categoryRefs = [aboutRef, experienceRef, educationRef, projectsRef];
 
   useEffect(() => {
     const checkActiveCategory = () => {
@@ -78,19 +78,19 @@ const Header = ({
         </span>
         <span
           className={
-            (activeCategory === 'education' ? 'active' : '') + ' nav-link'
-          }
-          onClick={() => scrollTo(educationRef)}
-        >
-          Education
-        </span>
-        <span
-          className={
             (activeCategory === 'experience' ? 'active' : '') + ' nav-link'
           }
           onClick={() => scrollTo(experienceRef)}
         >
           Experience
+        </span>
+        <span
+          className={
+            (activeCategory === 'education' ? 'active' : '') + ' nav-link'
+          }
+          onClick={() => scrollTo(educationRef)}
+        >
+          Education
         </span>
         <span
           className={
