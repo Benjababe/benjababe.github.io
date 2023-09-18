@@ -110,19 +110,19 @@ const Header = ({
         </span>
         <span
           className={
-            (activeCategory === 'education' ? 'active' : '') + ' nav-link'
-          }
-          onClick={() => scrollTo(educationRef)}
-        >
-          <img src={educationIcon} alt="Education Icon" />
-        </span>
-        <span
-          className={
             (activeCategory === 'experience' ? 'active' : '') + ' nav-link'
           }
           onClick={() => scrollTo(experienceRef)}
         >
           <img src={experienceIcon} alt="Experience Icon" />
+        </span>
+        <span
+          className={
+            (activeCategory === 'education' ? 'active' : '') + ' nav-link'
+          }
+          onClick={() => scrollTo(educationRef)}
+        >
+          <img src={educationIcon} alt="Education Icon" />
         </span>
         <span
           className={
