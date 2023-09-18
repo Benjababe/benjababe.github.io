@@ -21,7 +21,17 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
         title="Full-Stack Developer Intern"
       >
         <div className="resume-content">
-          <p className="light-text">AI.Seer | Singapore</p>
+          <p className="light-text">
+            <a
+              className="external"
+              target="_blank"
+              rel="noreferrer"
+              href="https://aiseer.co"
+            >
+              Seer
+            </a>{' '}
+            | Singapore
+          </p>
           <SkillsDisplay
             skills={[
               'Next.js',
@@ -66,7 +76,17 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
         title="Full-Stack Developer Intern"
       >
         <div className="resume-content">
-          <p className="light-text">FoodLine.SG | Singapore</p>
+          <p className="light-text">
+            <a
+              className="external"
+              target="_blank"
+              rel="noreferrer"
+              href="https://foodline.sg"
+            >
+              FoodLine.sg
+            </a>{' '}
+            | Singapore
+          </p>
           <SkillsDisplay
             skills={['PHP', 'CSS', 'Javascript', 'MySQL', 'UNIX', 'jQuery']}
           />
