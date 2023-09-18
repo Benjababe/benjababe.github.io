@@ -92,4 +92,8 @@
         color: white;
         fill: white;
     }
+
+    .nav-link:hover::after {
+        transform: scaleX(0);
+    }
 }
