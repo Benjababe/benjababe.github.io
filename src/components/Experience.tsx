@@ -111,7 +111,15 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
       <ResumeEntry dateRange="Apr 2016 - Sep 2016" title="Research Assistant">
         <div className="resume-content">
           <p className="light-text">
-            Institute for Infocomm Research | Singapore
+            <a
+              className="external"
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.a-star.edu.sg/i2r"
+            >
+              Institute for Infocomm Research
+            </a>{' '}
+            | Singapore
           </p>
           <ul className="light-text">
             <li>
