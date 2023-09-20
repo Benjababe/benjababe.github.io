@@ -45,7 +45,11 @@ const SkillsDisplay = ({ skills }: SkillsProps) => {
 
   return (
     <div className="light-text">
-      <ScrollContainer horizontal={true} innerRef={skillContainerRef}>
+      <ScrollContainer
+        className="skill-container"
+        horizontal={true}
+        innerRef={skillContainerRef}
+      >
         <div className="skill-description">{skills.join(' ')}</div>
         <div className="skill-block">{imgArr}</div>
       </ScrollContainer>

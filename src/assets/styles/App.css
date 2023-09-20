@@ -110,11 +110,14 @@ a.external::after {
     margin-bottom: 1rem;
 }
 
+.skill-container {
+    border-radius: 0.75rem;
+}
+
 .skill-block {
     display: flex;
     column-gap: 0.75rem;
-    margin: 1rem 0 1rem 0;
-    padding: 1rem 1.25rem 1rem 1.25rem;
+    padding: 0 1.25rem 0 1.25rem;
     background-color: rgb(50, 50, 50);
     overflow-x: visible;
     height: max-content;
@@ -137,6 +140,7 @@ a.external::after {
     width: 2.5rem;
     vertical-align: middle;
     margin: auto 0.5rem auto 0.5rem;
+    padding: 1rem 0 1rem 0;
     user-select: none;
     transition: transform 0.2s ease-in-out;
 }
