@@ -16,7 +16,6 @@ const SkillsDisplay = ({ skills }: SkillsProps) => {
         left: skillContainerRef.current.scrollWidth,
         behavior: 'smooth',
       });
-      console.dir(skillContainerRef.current);
       setTimeout(() => {
         skillContainerRef.current.scrollTo({ left: 0, behavior: 'smooth' });
       }, 1500);
