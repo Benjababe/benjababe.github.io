@@ -194,6 +194,10 @@ a.external::after {
     margin-right: 1rem;
 }
 
+.project-icon img:hover {
+    transform: initial !important;
+}
+
 .project-desc li {
     margin-bottom: 0.375rem;
 }
