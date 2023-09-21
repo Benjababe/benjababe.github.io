@@ -136,6 +136,7 @@ a.external::after {
 }
 
 .generic-skill-img-wrapper {
+    z-index: 0;
     position: relative;
     height: 2.5rem;
     width: 2.5rem;
@@ -147,6 +148,7 @@ a.external::after {
 }
 
 .generic-skill-img-wrapper:hover {
+    z-index: 1;
     transform: scale(1.25);
 }
 
