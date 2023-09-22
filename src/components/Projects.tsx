@@ -23,7 +23,12 @@ const Projects = ({ id, projectsRef, trackEvent }: ProjectsProps) => {
   };
 
   return (
-    <section data-aos="fade-up" id={id} className="section" ref={projectsRef}>
+    <section
+      data-aos="fade-right"
+      id={id}
+      className="section"
+      ref={projectsRef}
+    >
       <div
         className={`projects-container ${expandProjects ? 'shown' : 'hidden'}`}
       >

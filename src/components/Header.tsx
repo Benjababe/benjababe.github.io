@@ -57,7 +57,6 @@ const Header = ({
   });
 
   const scrollTo = (ref: MutableRefObject<HTMLDivElement>) => {
-    ref.current.style.scrollMargin = '5rem'; // header is 5rem tall
     ref.current.scrollIntoView({ behavior: 'smooth' });
 
     trackEvent({
