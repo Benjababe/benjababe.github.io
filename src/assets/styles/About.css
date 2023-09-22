@@ -34,9 +34,13 @@
 }
 
 .sub-title a {
-    color: rgb(93 126 255);
+    color: rgb(60, 99, 255);
     text-decoration: none;
     background-color: transparent;
+}
+
+.sub-title a:hover {
+    color: rgb(132, 156, 255);
 }
 
 .desc {
