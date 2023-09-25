@@ -11,13 +11,18 @@ const SkillsDisplay = ({ skills }: SkillsProps) => {
   const skillContainerRef = useRef<HTMLElement>(null);
 
   function previewSkills() {
+    const elem = skillContainerRef.current;
+    if (elem.scrollWidth <= elem.clientWidth) {
+      return;
+    }
+
     setTimeout(() => {
-      skillContainerRef.current.scrollTo({
-        left: skillContainerRef.current.scrollWidth,
+      elem.scrollTo({
+        left: elem.scrollWidth,
         behavior: 'smooth',
       });
       setTimeout(() => {
-        skillContainerRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        elem.scrollTo({ left: 0, behavior: 'smooth' });
       }, 1500);
     }, 1000);
   }
