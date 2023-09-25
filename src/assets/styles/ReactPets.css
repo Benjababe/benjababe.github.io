@@ -1,20 +1,13 @@
 .pet-container-overlay {
-    text-align: initial;
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    height: 12rem;
-    width: 30rem;
-    transform: translateX(-50%);
+    height: 20rem;
+    width: 20rem;
 }
 
 .pet-container {
-    text-align: initial;
     position: relative;
-    left: 50%;
     width: 20rem;
-    min-height: 5rem;
-    transform: translateX(-50%);
+    min-height: 7.5rem;
 }
 
 .pet {
