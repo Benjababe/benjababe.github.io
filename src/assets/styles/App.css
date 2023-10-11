@@ -48,6 +48,7 @@ a.external::after {
 }
 
 .icon-container {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
