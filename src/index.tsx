@@ -7,16 +7,17 @@ import App from './App';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
-const instance = createInstance({
-  urlBase: 'https://matomo.benjababe.duckdns.org',
-  siteId: 2,
-});
+// const instance = createInstance({
+//   urlBase: 'https://matomo.benjababe.duckdns.org',
+//   siteId: 2,
+// });
 root.render(
   <>
     <React.StrictMode>
-      <MatomoProvider value={instance}>
+      {/* <MatomoProvider value={instance}>
         <App />
-      </MatomoProvider>
+      </MatomoProvider> */}
+      <App />
     </React.StrictMode>
   </>,
 );
