@@ -20,11 +20,10 @@ function App() {
   const educationRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
 
-  // const { trackPageView, trackEvent } = useMatomo();
-  const trackEvent = () => {};
+  const { trackPageView, trackEvent } = useMatomo();
 
   useEffect(() => {
-    // trackPageView();
+    trackPageView();
   });
 
   useEffect(() => {
