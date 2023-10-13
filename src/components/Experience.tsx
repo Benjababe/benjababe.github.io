@@ -53,20 +53,17 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
           />
           <ul className="light-text">
             <li>
-              Restructured existing in-house video processing modules and
-              OpenAI&apos;s whisper model into gRPC/REST microservices.
+              Restructured existing in-house video processing modules into
+              microservices in Python.
             </li>
             <li>
-              Constructed a pipeline for video upload and processing consisting
-              of a Golang proxy server, ReactJS frontend and NestJS backend.
+              Constructed a pipeline consisting of a Golang proxy server, Redis
+              cache and said microservices for a high throughput and scalable
+              video processing system on the cloud.
             </li>
             <li>
               Secured proper deployment of all web services on Azure Container
-              Apps and Virtual Machine instances.
-            </li>
-            <li>
-              Ensured proper documentation was written and code quality was
-              maintained throughout all commits.
+              Apps and Cloud Virtual Machine instances.
             </li>
           </ul>
         </div>
@@ -92,18 +89,19 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
           />
           <ul className="light-text">
             <li>
-              Built software for funds transfer from the company&apos;s bank
-              accounts via FAST/Remittance as well as to receive notifications
-              of incoming payments.
+              Developed internal scripts for funds transfer from the company’s
+              bank accounts via FAST/Remittance as well as to receive
+              notification for incoming payments.
             </li>
             <li>
-              Improved subscription functionality to support manual recharging
-              of customers through Braintree.
+              Improved existing subscription service to allow charging of
+              customers through previous payment methods.
             </li>
             <li>
               Multitude of improvements to internal pages, supporting 6
-              departments, and external customer pages consisting of code speed
-              up, general feature implementations and bug fixes.
+              departments, and external customer pages consisting of code and
+              database query speed up, general feature implementations and bug
+              fixes.
             </li>
           </ul>
         </div>
