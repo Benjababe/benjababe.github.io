@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { useMatomo } from '@jonkoops/matomo-tracker-react';
+// import { useMatomo } from '@jonkoops/matomo-tracker-react';
+import ReactGA from 'react-ga4';
 import './assets/styles/App.css';
 
 import Header from './components/Header';
@@ -20,10 +21,12 @@ function App() {
   const educationRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
 
-  const { trackPageView, trackEvent } = useMatomo();
+  // const { trackPageView, trackEvent } = useMatomo();
+  const trackEvent = () => {};
 
   useEffect(() => {
-    trackPageView();
+    // trackPageView();
+    ReactGA.initialize('G-PDY46DG705');
   });
 
   useEffect(() => {
