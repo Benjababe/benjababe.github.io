@@ -17,6 +17,16 @@ interface AboutProps {
 }
 
 const About = ({ id, aboutRef }: AboutProps): ReactElement => {
+  function getSubTitle() {
+    const subtitles = [
+      'Async jokes always Promise they will be good',
+      'Constantly optimizing my code and occasionally, my life',
+      "I shouldn't make backend jokes",
+      'vi + me = random string generator',
+    ];
+    return subtitles[Math.floor(Math.random() * subtitles.length)];
+  }
+
   return (
     <section id={id} className="section about" ref={aboutRef}>
       <div className="mugshot-container">
@@ -48,7 +58,7 @@ const About = ({ id, aboutRef }: AboutProps): ReactElement => {
           {'Benjamin '}
           <span className="title-alt">Goh</span>
         </h1>
-        <h3>Aspiring Full-Stack Developer</h3>
+        <h3>{getSubTitle()}</h3>
         <div className="sub-title plain-text">
           {'Singapore · '}
           <a href="mailto:bengohzy@gmail.com">bengohzy@gmail.com</a>
