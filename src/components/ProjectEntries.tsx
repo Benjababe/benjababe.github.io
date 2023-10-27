@@ -10,6 +10,39 @@ const ProjectEntries = () => {
   return (
     <>
       <ProjectEntry
+        name="GenericMangoDownloader"
+        type="CLI Application"
+        skills={['Python', 'unittest']}
+      >
+        <ul className="icon-container project-icon-container">
+          <li className="icon project-icon">
+            <GithubIcon url="https://github.com/Benjababe/GenericMangoDownloader" />
+          </li>
+        </ul>
+        <ul className="project-desc">
+          <li>
+            Developed a CLI aggregate manga downloader with site specific
+            features.
+          </li>
+          <li>
+            Implemented publicly available APIs and a web scraper to retrieve
+            information for image downloads.
+          </li>
+          <li>
+            Constructed a modular system where extensions for additional
+            websites can be written and integrated seamlessly
+          </li>
+          <li>
+            Reverse engineered websites&apos; JavaScript to include features not
+            easily accessible to the average user
+          </li>
+          <li>
+            Wrote a plentiful amount of unit tests to show, specifically, which
+            features of which extension are currently not working
+          </li>
+        </ul>
+      </ProjectEntry>
+      <ProjectEntry
         name="NTUMods"
         type="Web Application"
         skills={['ReactJS', 'django', 'postgresql', 'Docker']}
@@ -35,6 +68,34 @@ const ProjectEntries = () => {
           <li>
             Worked primarily on the frontend as well as the webscrapers, handled
             some data models in django.
+          </li>
+        </ul>
+      </ProjectEntry>
+      <ProjectEntry
+        name="Terminal Vidya Player"
+        type="CLI Application"
+        skills={['C++', 'CMake', 'OpenCV', 'FFmpeg']}
+      >
+        <ul className="icon-container project-icon-container">
+          <li className="icon project-icon">
+            <GithubIcon url="https://github.com/Benjababe/term-video" />
+          </li>
+          <li className="icon project-icon">
+            <YouTubeIcon url="https://www.youtube.com/watch?v=H09VKJ3H3Lk" />
+          </li>
+        </ul>
+        <ul className="project-desc">
+          <li>
+            Developed a CLI application that plays video as an ASCII output in
+            the terminal.
+          </li>
+          <li>
+            Allows frames to be displayed by writing to the output buffer or the
+            console buffer directly.
+          </li>
+          <li>
+            Supports reduced colour switching and reduced framerates to optimise
+            frame printing times as well as audio language selection.
           </li>
         </ul>
       </ProjectEntry>
@@ -82,67 +143,6 @@ const ProjectEntries = () => {
           </li>
           <li>
             Worked on the backend, all communications between client & server.
-          </li>
-        </ul>
-      </ProjectEntry>
-      <ProjectEntry
-        name="GenericMangoDownloader"
-        type="CLI Application"
-        skills={['Python', 'unittest']}
-      >
-        <ul className="icon-container project-icon-container">
-          <li className="icon project-icon">
-            <GithubIcon url="https://github.com/Benjababe/GenericMangoDownloader" />
-          </li>
-        </ul>
-        <ul className="project-desc">
-          <li>
-            Developed a CLI aggregate manga downloader with site specific
-            features.
-          </li>
-          <li>
-            Implemented publicly available APIs and a web scraper to retrieve
-            information for image downloads.
-          </li>
-          <li>
-            Constructed a modular system where extensions for additional
-            websites can be written and integrated seamlessly
-          </li>
-          <li>
-            Reverse engineered websites&apos; JavaScript to include features not
-            easily accessible to the average user
-          </li>
-          <li>
-            Wrote a plentiful amount of unit tests to show, specifically, which
-            features of which extension are currently not working
-          </li>
-        </ul>
-      </ProjectEntry>
-      <ProjectEntry
-        name="CPP Video to ASCII"
-        type="CLI Application"
-        skills={['C++', 'CMake', 'OpenCV']}
-      >
-        <ul className="icon-container project-icon-container">
-          <li className="icon project-icon">
-            <GithubIcon url="https://github.com/Benjababe/CPP-Video-to-ASCII" />
-          </li>
-          <li className="icon project-icon">
-            <YouTubeIcon url="https://www.youtube.com/watch?v=H09VKJ3H3Lk" />
-          </li>
-        </ul>
-        <ul className="project-desc">
-          <li>
-            Developed a CLI application that converts videos into an ASCII
-            output on your terminal.
-          </li>
-          <li>
-            Allows frames to be displayed by writing to the output buffer or the
-            console buffer directly.
-          </li>
-          <li>
-            Supports reduced colour switching and reduced framerates to optimise
-            frame printing times.
           </li>
         </ul>
       </ProjectEntry>
