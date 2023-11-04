@@ -8,34 +8,30 @@ import projectIcon from '../assets/images/icons/project-icon.svg';
 import '../assets/styles/Header.css';
 
 interface HeaderProps {
-  aboutRef: MutableRefObject<HTMLDivElement>;
-  educationRef: MutableRefObject<HTMLDivElement>;
-  experienceRef: MutableRefObject<HTMLDivElement>;
-  projectsRef: MutableRefObject<HTMLDivElement>;
+  headerRefs: { ref: MutableRefObject<HTMLDivElement>; name: string }[];
   trackEvent: (param: TrackEventParams) => void;
 }
 
-const Header = ({
-  aboutRef,
-  experienceRef,
-  educationRef,
-  projectsRef,
-  trackEvent,
-}: HeaderProps) => {
+const iconMap: Record<string, string> = {
+  about: aboutIcon,
+  education: educationIcon,
+  experience: experienceIcon,
+  projects: projectIcon,
+};
+
+const Header = ({ headerRefs, trackEvent }: HeaderProps) => {
   const [activeCategory, setActiveCategory] = useState('about');
-  const categoryRefs = [aboutRef, experienceRef, educationRef, projectsRef];
 
   useEffect(() => {
     const checkActiveCategory = () => {
       // get sections that are visible
-      const shownSections = categoryRefs
-        .map((categoryRef) => {
-          const rect = categoryRef.current.getBoundingClientRect();
+      const shownSections = headerRefs
+        .map(({ ref }) => {
+          const rect = ref.current.getBoundingClientRect();
           const heightShown =
             Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
           return {
-            id: categoryRef.current.id,
-            ref: categoryRef,
+            id: ref.current.id,
             height: heightShown,
           };
         })
@@ -73,72 +69,34 @@ const Header = ({
     });
   };
 
+  const headerElements = headerRefs.map((hRef, i) => {
+    return (
+      <span
+        key={`${i}-header`}
+        className={(activeCategory === hRef.name ? 'active' : '') + ' nav-link'}
+        onClick={() => scrollTo(hRef.ref)}
+      >
+        {hRef.name}
+      </span>
+    );
+  });
+
+  const headerElementsMobile = headerRefs.map(({ ref, name }, i) => {
+    return (
+      <span
+        key={`${i}-header-mobile`}
+        className={(activeCategory === name ? 'active' : '') + ' nav-link'}
+        onClick={() => scrollTo(ref)}
+      >
+        <img src={iconMap[name]} alt={`${name} Icon`} />
+      </span>
+    );
+  });
+
   return (
     <>
-      <nav className="nav-header">
-        <span
-          className={(activeCategory === 'about' ? 'active' : '') + ' nav-link'}
-          onClick={() => scrollTo(aboutRef)}
-        >
-          About
-        </span>
-        <span
-          className={
-            (activeCategory === 'experience' ? 'active' : '') + ' nav-link'
-          }
-          onClick={() => scrollTo(experienceRef)}
-        >
-          Experience
-        </span>
-        <span
-          className={
-            (activeCategory === 'education' ? 'active' : '') + ' nav-link'
-          }
-          onClick={() => scrollTo(educationRef)}
-        >
-          Education
-        </span>
-        <span
-          className={
-            (activeCategory === 'projects' ? 'active' : '') + ' nav-link'
-          }
-          onClick={() => scrollTo(projectsRef)}
-        >
-          Projects
-        </span>
-      </nav>
-      <nav className="nav-header-mobile">
-        <span
-          className={(activeCategory === 'about' ? 'active' : '') + ' nav-link'}
-          onClick={() => scrollTo(aboutRef)}
-        >
-          <img src={aboutIcon} alt="About Icon" />
-        </span>
-        <span
-          className={
-            (activeCategory === 'experience' ? 'active' : '') + ' nav-link'
-          }
-          onClick={() => scrollTo(experienceRef)}
-        >
-          <img src={experienceIcon} alt="Experience Icon" />
-        </span>
-        <span
-          className={
-            (activeCategory === 'education' ? 'active' : '') + ' nav-link'
-          }
-          onClick={() => scrollTo(educationRef)}
-        >
-          <img src={educationIcon} alt="Education Icon" />
-        </span>
-        <span
-          className={
-            (activeCategory === 'projects' ? 'active' : '') + ' nav-link'
-          }
-          onClick={() => scrollTo(projectsRef)}
-        >
-          <img src={projectIcon} alt="Project Icon" />
-        </span>
-      </nav>
+      <nav className="nav-header">{headerElements}</nav>
+      <nav className="nav-header-mobile">{headerElementsMobile}</nav>
     </>
   );
 };

@@ -21,6 +21,13 @@ function App() {
   const educationRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
 
+  const headerRefs = [
+    { ref: aboutRef, name: 'about' },
+    { ref: experienceRef, name: 'experience' },
+    { ref: educationRef, name: 'education' },
+    { ref: projectsRef, name: 'projects' },
+  ];
+
   // const { trackPageView, trackEvent } = useMatomo();
   const trackEvent = () => {};
 
@@ -38,14 +45,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header
-        aboutRef={aboutRef}
-        educationRef={educationRef}
-        experienceRef={experienceRef}
-        projectsRef={projectsRef}
-        trackEvent={trackEvent}
-      />
-
+      <Header headerRefs={headerRefs} trackEvent={trackEvent} />
       <div>
         <KumaWidget
           showKuma={showKuma}
