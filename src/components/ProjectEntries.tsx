@@ -30,15 +30,15 @@ const ProjectEntries = () => {
           </li>
           <li>
             Constructed a modular system where extensions for additional
-            websites can be written and integrated seamlessly
+            websites can be written and integrated seamlessly.
           </li>
           <li>
             Reverse engineered websites&apos; JavaScript to include features not
-            easily accessible to the average user
+            easily accessible to the average user.
           </li>
           <li>
             Wrote a plentiful amount of unit tests to show, specifically, which
-            features of which extension are currently not working
+            features of which extension are currently not working.
           </li>
         </ul>
       </ProjectEntry>
@@ -86,16 +86,19 @@ const ProjectEntries = () => {
         </ul>
         <ul className="project-desc">
           <li>
-            Developed a CLI application that plays video as an ASCII output in
-            the terminal.
+            CLI application that plays video as an ASCII output in the terminal
+            utilising Win32 API and ncurses.
           </li>
           <li>
-            Allows frames to be displayed by writing to the output buffer or the
-            console buffer directly.
+            Allow frames to be displayed by either printing normally or writing
+            directly to the console buffer.
           </li>
           <li>
-            Supports reduced colour switching and reduced framerates to optimise
-            frame printing times as well as audio language selection.
+            Printing optimisation with reduced colour switching and lowered
+            frame rates to mitigate dropped frames.
+          </li>
+          <li>
+            Supports audio playback with preferred audio language selection.
           </li>
         </ul>
       </ProjectEntry>

@@ -20,7 +20,7 @@ const iconMap: Record<string, string> = {
 };
 
 const Header = ({ headerRefs, trackEvent }: HeaderProps) => {
-  const [activeCategory, setActiveCategory] = useState('about');
+  const [activeCategory, setActiveCategory] = useState(headerRefs[0].name);
 
   useEffect(() => {
     const checkActiveCategory = () => {
