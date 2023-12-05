@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 // import { useMatomo } from '@jonkoops/matomo-tracker-react';
-import ReactGA from 'react-ga4';
 import './assets/styles/App.css';
 
 import Header from './components/Header';
@@ -33,7 +32,6 @@ function App() {
 
   useEffect(() => {
     // trackPageView();
-    ReactGA.initialize('G-PDY46DG705');
   });
 
   useEffect(() => {

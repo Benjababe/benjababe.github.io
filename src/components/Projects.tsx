@@ -1,6 +1,5 @@
 import { useState, ForwardedRef } from 'react';
 import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
-import ReactGA from 'react-ga4';
 import expandIcon from '../assets/images/icons/expand-icon.svg';
 import ProjectEntries from './ProjectEntries';
 
@@ -15,12 +14,6 @@ const Projects = ({ id, projectsRef, trackEvent }: ProjectsProps) => {
 
   const toggleProjects = () => {
     setExpandProjects(!expandProjects);
-
-    ReactGA.event({
-      category: 'self-projects',
-      action: 'click-toggle',
-      label: expandProjects ? 'contract' : 'expand',
-    });
 
     trackEvent({
       category: 'self-projects',

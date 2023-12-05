@@ -1,6 +1,5 @@
 import ImageGallery, { ReactImageGalleryItem } from 'react-image-gallery';
 import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
-import ReactGA from 'react-ga4';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
 import kumaPeek from '../assets/images/kuma/kuma-peek.png';
@@ -28,12 +27,6 @@ export const KumaWidget = ({
 }: KumaWidgetProps) => {
   const toggleKuma = () => {
     setShowKuma(!showKuma);
-
-    ReactGA.event({
-      category: 'kuma-widget',
-      action: 'click-toggle',
-      label: showKuma ? 'hide' : 'show',
-    });
 
     trackEvent({
       category: 'kuma-widget',

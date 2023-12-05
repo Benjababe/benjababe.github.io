@@ -1,6 +1,5 @@
 import { useState, useEffect, MutableRefObject } from 'react';
 import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
-import ReactGA from 'react-ga4';
 import aboutIcon from '../assets/images/icons/about-icon.svg';
 import educationIcon from '../assets/images/icons/education-icon.svg';
 import experienceIcon from '../assets/images/icons/experience-icon.svg';
@@ -55,12 +54,6 @@ const Header = ({ headerRefs, trackEvent }: HeaderProps) => {
 
   const scrollTo = (ref: MutableRefObject<HTMLDivElement>) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
-
-    ReactGA.event({
-      category: 'header',
-      action: 'scroll-to',
-      label: ref.current.id,
-    });
 
     trackEvent({
       category: 'header',
