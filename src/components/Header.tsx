@@ -1,5 +1,6 @@
 import { useState, useEffect, MutableRefObject } from 'react';
 import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
+import { usePostHog } from 'posthog-js/react';
 import aboutIcon from '../assets/images/icons/about-icon.svg';
 import educationIcon from '../assets/images/icons/education-icon.svg';
 import experienceIcon from '../assets/images/icons/experience-icon.svg';
@@ -20,6 +21,7 @@ const iconMap: Record<string, string> = {
 
 const Header = ({ headerRefs, trackEvent }: HeaderProps) => {
   const [activeCategory, setActiveCategory] = useState(headerRefs[0].name);
+  const posthog = usePostHog();
 
   useEffect(() => {
     const checkActiveCategory = () => {
@@ -54,6 +56,11 @@ const Header = ({ headerRefs, trackEvent }: HeaderProps) => {
 
   const scrollTo = (ref: MutableRefObject<HTMLDivElement>) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
+
+    posthog.capture('header-event', {
+      action: 'scroll-to',
+      name: ref.current.id,
+    });
 
     trackEvent({
       category: 'header',

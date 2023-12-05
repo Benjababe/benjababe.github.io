@@ -1,5 +1,6 @@
 import { useState, ForwardedRef } from 'react';
 import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
+import { usePostHog } from 'posthog-js/react';
 import expandIcon from '../assets/images/icons/expand-icon.svg';
 import ProjectEntries from './ProjectEntries';
 
@@ -11,9 +12,15 @@ interface ProjectsProps {
 
 const Projects = ({ id, projectsRef, trackEvent }: ProjectsProps) => {
   const [expandProjects, setExpandProjects] = useState(false);
+  const posthog = usePostHog();
 
   const toggleProjects = () => {
     setExpandProjects(!expandProjects);
+
+    posthog.capture('self-projects-event', {
+      action: 'toggle',
+      name: expandProjects ? 'contract' : 'expand',
+    });
 
     trackEvent({
       category: 'self-projects',
