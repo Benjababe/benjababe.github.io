@@ -33,3 +33,8 @@ export { default as SocketIOIcon } from './socket.io-icon.svg';
 export { default as TailwindCSSIcon } from './tailwindcss-icon.svg';
 export { default as UnityIcon } from './unity-icon.svg';
 export { default as WebRTCIcon } from './webrtc-icon.svg';
+export { default as SvelteIcon } from './svelte-icon.svg';
+export { default as SvelteKitIcon } from './svelte-icon.svg';
+export { default as FirebaseIcon } from './firebase-icon.svg';
+export { default as TypesenseIcon } from './typesense-icon.svg';
+export { default as VercelIcon } from './vercel-icon.svg';

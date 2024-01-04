@@ -143,9 +143,10 @@ a.external::after {
 
 .generic-skill-img-wrapper {
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    height: 2.5rem;
-    width: 2.5rem;
     vertical-align: middle;
     margin: auto 0.5rem auto 0.5rem;
     padding: 1rem 0 1rem 0;
@@ -171,6 +172,11 @@ a.external::after {
     background-color: #171717;
     color: #fff;
     border-radius: 1rem;
+}
+
+.generic-skill-img {
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 .projects-container {

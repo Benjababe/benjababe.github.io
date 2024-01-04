@@ -3,8 +3,6 @@ import GithubIcon from './icons/GithubIcon';
 import YouTubeIcon from './icons/YouTubeIcon';
 import LinkIcon from './icons/LinkIcon';
 import DevpostIcon from './icons/DevpostIcon';
-import GreasyForkIcon from './icons/GreasyForkIcon';
-import RedditIcon from './icons/RedditIcon';
 
 const ProjectEntries = () => {
   return (
@@ -43,31 +41,39 @@ const ProjectEntries = () => {
         </ul>
       </ProjectEntry>
       <ProjectEntry
-        name="NTUMods"
+        name="NTUMoons"
         type="Web Application"
-        skills={['ReactJS', 'django', 'postgresql', 'Docker']}
+        skills={['SvelteKit', 'Vercel', 'Firebase', 'Typesense', 'Python']}
       >
         <ul className="icon-container project-icon-container">
           <li className="icon project-icon">
-            <GithubIcon url="https://github.com/Benjababe/NTUMods" />
+            <GithubIcon url="https://github.com/Benjababe/NTUMoons" />
           </li>
           <li className="icon project-icon">
-            <DevpostIcon url="https://devpost.com/software/ntumods" />
+            <LinkIcon url="https://ntumoons.vercel.app" />
           </li>
         </ul>
         <ul className="project-desc">
-          <li>Project made for iNTUition v9.0.</li>
           <li>
-            Developed a web application with a friend where users are able to
-            find modules and rooms in NTU.
+            Online web portal for NTU students to plan modules and view general
+            school information.
           </li>
           <li>
-            For the venues, users can filter them to find a vacant one given a
-            day and time range.
+            Scrapes NTU webpages for information about modules, venues and staff
+            which is stored in Firebase.
           </li>
           <li>
-            Worked primarily on the frontend as well as the webscrapers, handled
-            some data models in django.
+            Allow users to add modules to a timetable on a per semester basis
+            and has a built in timetable generator to find compatible lesson
+            timings.
+          </li>
+          <li>
+            Utilised Typesense for indexing of module and staff documents for
+            text based search queries and filters.
+          </li>
+          <li>
+            Implemented internationalisation to provide a more inclusive user
+            experiences for multiple languages.
           </li>
         </ul>
       </ProjectEntry>
@@ -170,128 +176,6 @@ const ProjectEntries = () => {
           <li>
             Users are able to select either one of 2 encoding options, VP8 or
             VP9.
-          </li>
-        </ul>
-      </ProjectEntry>
-      <ProjectEntry
-        name="HLTV-CLI"
-        type="CLI Application"
-        skills={['C#', '.NET']}
-      >
-        <ul className="icon-container project-icon-container">
-          <li className="icon project-icon">
-            <GithubIcon url="https://github.com/Benjababe/HLTV-CLI" />
-          </li>
-        </ul>
-        <ul className="project-desc">
-          <li>A CLI client made for HLTV.org.</li>
-          <li>
-            Users are able to see player of the week, current & upcoming matches
-            as well as forum threads.
-          </li>
-          <li>
-            The live scoreboard of a ongoing match can also be viewed by users.
-          </li>
-        </ul>
-      </ProjectEntry>
-      <ProjectEntry
-        name="NTU Kaltura Downloader"
-        type="Userscript"
-        skills={['Javascript']}
-      >
-        <ul className="icon-container project-icon-container">
-          <li className="icon project-icon">
-            <GithubIcon url="https://github.com/Benjababe/Dumb-Stuff/blob/main/Userscripts/ntu-kaltura-downloader.js" />
-          </li>
-          <li className="icon project-icon">
-            <GreasyForkIcon url="https://greasyfork.org/en/scripts/420073-ntu-kaltura-downloader" />
-          </li>
-        </ul>
-        <ul className="project-desc">
-          <li>
-            Developed a userscript which includes a button to download videos
-            hosted on Kaltura.
-          </li>
-          <li>
-            Script either runs on NTULearn itself or embedded Kaltura pages
-            within NTULearn.
-          </li>
-        </ul>
-      </ProjectEntry>
-      <ProjectEntry
-        name="IPGeoGuessr"
-        type="Web Game"
-        skills={['HTML', 'Javascript', 'CSS']}
-      >
-        <ul className="icon-container project-icon-container">
-          <li className="icon project-icon">
-            <GithubIcon url="https://github.com/Benjababe/IPGeoGuessr" />
-          </li>
-          <li className="icon project-icon">
-            <DevpostIcon url="https://devpost.com/software/ipgeoguessr" />
-          </li>
-        </ul>
-        <ul className="project-desc">
-          <li>Project made for iNTUition v8.0.</li>
-          <li>
-            Developed a web game with a group based off the existing popular
-            game GeoGuessr.
-          </li>
-          <li>
-            Players try to guess the physical location of the ISP for a given IP
-            Address.
-          </li>
-          <li>
-            Hints for the IP Address relating to its ISP location will be given
-            to the user.
-          </li>
-        </ul>
-      </ProjectEntry>
-      <ProjectEntry
-        name="Not Rosa Musou"
-        type="Web Game"
-        skills={['C#', 'Unity']}
-      >
-        <ul className="icon-container project-icon-container">
-          <li className="icon project-icon">
-            <GithubIcon url="https://github.com/Benjababe/NotRosaMusou" />
-          </li>
-          <li className="icon project-icon">
-            <LinkIcon url="https://benjababe.itch.io/not-rosa-musou" />
-          </li>
-        </ul>
-        <ul className="project-desc">
-          <li>
-            Developed a web game based off &quot;Umineko no Naku Koro ni&quot;
-            where users try to survive as long as possible in a side scrolling
-            shooter.
-          </li>
-          <li>
-            Project was made within my first 24 hours of being exposed to Unity.
-          </li>
-        </ul>
-      </ProjectEntry>
-      <ProjectEntry
-        name="Buldog Playsound Bot"
-        type="Online Bot"
-        skills={['NodeJS', 'FFMPEG', 'Javascript']}
-      >
-        <ul className="icon-container project-icon-container">
-          <li className="icon project-icon">
-            <GithubIcon url="https://github.com/Benjababe/Buldog-Playsound-Bot" />
-          </li>
-          <li className="icon project-icon">
-            <RedditIcon url="https://reddit.com/u/buldogplaysoundbot" />
-          </li>
-        </ul>
-        <ul className="project-desc">
-          <li>
-            Developed a web scraper to pull several pages periodically to
-            retrieve command strings and audio files.
-          </li>
-          <li>
-            Integrated FFMPEG to allow concatenation of multiple audio files as
-            well as manipulating their playback rates.
           </li>
         </ul>
       </ProjectEntry>

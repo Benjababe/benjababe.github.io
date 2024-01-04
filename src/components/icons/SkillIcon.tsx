@@ -67,6 +67,11 @@ const skills: Skill[] = [
     text: 'FFmpeg',
   },
   {
+    name: ['firebase'],
+    src: SkillIcons.FirebaseIcon,
+    text: 'Firebase',
+  },
+  {
     name: ['go', 'golang'],
     src: SkillIcons.GoIcon,
     text: 'Go',
@@ -167,14 +172,34 @@ const skills: Skill[] = [
     text: 'Socket.IO',
   },
   {
+    name: ['svelte'],
+    src: SkillIcons.SvelteIcon,
+    text: 'Svelte',
+  },
+  {
+    name: ['sveltekit'],
+    src: SkillIcons.SvelteKitIcon,
+    text: 'SvelteKit',
+  },
+  {
     name: ['tailwind', 'tailwindcss'],
     src: SkillIcons.TailwindCSSIcon,
     text: 'TailwindCSS',
   },
   {
+    name: ['typesense'],
+    src: SkillIcons.TypesenseIcon,
+    text: 'Typesense',
+  },
+  {
     name: ['unity'],
     src: SkillIcons.UnityIcon,
     text: 'Unity',
+  },
+  {
+    name: ['vercel'],
+    src: SkillIcons.VercelIcon,
+    text: 'Vercel',
   },
   {
     name: ['webrtc'],
@@ -190,7 +215,7 @@ const SkillIcon = ({ name }: SkillIconProps) => {
 
   return (
     <div className="generic-skill-img-wrapper" data-text={skill.text}>
-      <img src={skill.src} alt=""></img>
+      <img className="generic-skill-img" src={skill.src} alt=""></img>
     </div>
   );
 };
