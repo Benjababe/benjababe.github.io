@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.2b9ea3ca.css",
-    "main.js": "/static/js/main.cd15c91d.js",
+    "main.js": "/static/js/main.3b40c761.js",
     "static/media/kuma-pic-4.jpg": "/static/media/kuma-pic-4.800e7bb0ea437702af88.jpg",
     "static/media/kuma-pic-1.jpg": "/static/media/kuma-pic-1.b4514716d75a6d3d14bc.jpg",
     "static/media/kuma-pic-3.jpg": "/static/media/kuma-pic-3.a2ba2c8e8137867f04d7.jpg",
-    "static/media/resume.pdf": "/static/media/resume.cd4359abd50b4f297149.pdf",
+    "static/media/resume.pdf": "/static/media/resume.114a8a64846a10310dc0.pdf",
     "static/media/kuma-genlop.png": "/static/media/kuma-genlop.42a046339b1581931e8d.png",
     "static/media/kuma-pic-2.jpg": "/static/media/kuma-pic-2.5165a61989542f419c4d.jpg",
     "static/media/kuma-peek.png": "/static/media/kuma-peek.e871cf6782a856d85512.png",
@@ -64,10 +64,10 @@
     "static/media/experience-icon.svg": "/static/media/experience-icon.a5ec57ef2ba19b2ff503509a5af9d16c.svg",
     "static/media/vercel-icon.svg": "/static/media/vercel-icon.95d3b0cdae2d8375de2a348ade8d1069.svg",
     "main.2b9ea3ca.css.map": "/static/css/main.2b9ea3ca.css.map",
-    "main.cd15c91d.js.map": "/static/js/main.cd15c91d.js.map"
+    "main.3b40c761.js.map": "/static/js/main.3b40c761.js.map"
   },
   "entrypoints": [
     "static/css/main.2b9ea3ca.css",
-    "static/js/main.cd15c91d.js"
+    "static/js/main.3b40c761.js"
   ]
 }
