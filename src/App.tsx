@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-// import { useMatomo } from '@jonkoops/matomo-tracker-react';
+import { useMatomo } from '@jonkoops/matomo-tracker-react';
 import './assets/styles/App.css';
 
 import Header from './components/Header';
@@ -27,11 +27,10 @@ function App() {
     { ref: projectsRef, name: 'projects' },
   ];
 
-  // const { trackPageView, trackEvent } = useMatomo();
-  const trackEvent = () => {};
+  const { trackPageView, trackEvent } = useMatomo();
 
   useEffect(() => {
-    // trackPageView();
+    trackPageView();
   });
 
   useEffect(() => {
