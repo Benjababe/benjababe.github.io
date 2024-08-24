@@ -1,6 +1,5 @@
 import ImageGallery, { ReactImageGalleryItem } from 'react-image-gallery';
 import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
-import { usePostHog } from 'posthog-js/react';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
 import kumaPeek from '../assets/images/kuma/kuma-peek.png';
@@ -26,15 +25,8 @@ export const KumaWidget = ({
   setShowKuma,
   trackEvent,
 }: KumaWidgetProps) => {
-  const posthog = usePostHog();
-
   const toggleKuma = () => {
     setShowKuma(!showKuma);
-
-    posthog.capture('kuma-event', {
-      action: 'toggle',
-      name: showKuma ? 'hide' : 'show',
-    });
 
     trackEvent({
       category: 'kuma-widget',

@@ -1,5 +1,4 @@
 import { ForwardedRef, ReactElement } from 'react';
-import { usePostHog } from 'posthog-js/react';
 import '../assets/styles/About.css';
 
 import mugshot from '../assets/images/mugshot.jpg';
@@ -18,8 +17,6 @@ interface AboutProps {
 }
 
 const About = ({ id, aboutRef }: AboutProps): ReactElement => {
-  const posthog = usePostHog();
-
   function getSubTitle() {
     const subtitles = [
       'Async jokes always Promise they will be good',
@@ -29,13 +26,6 @@ const About = ({ id, aboutRef }: AboutProps): ReactElement => {
     ];
     return subtitles[Math.floor(Math.random() * subtitles.length)];
   }
-
-  const linkEvent = (iconType: string) => {
-    posthog.capture('about-event', {
-      action: 'icon-click',
-      name: iconType,
-    });
-  };
 
   return (
     <section id={id} className="section about" ref={aboutRef}>
@@ -81,13 +71,13 @@ const About = ({ id, aboutRef }: AboutProps): ReactElement => {
         </p>
       </div>
       <ul className="icon-container">
-        <li className="icon" onClick={() => linkEvent('github')}>
+        <li className="icon">
           <GithubIcon url="https://github.com/Benjababe" />
         </li>
-        <li className="icon" onClick={() => linkEvent('linkedin')}>
+        <li className="icon">
           <LinkedInIcon url="https://www.linkedin.com/in/benjamin-goh-978201227/" />
         </li>
-        <li className="icon" onClick={() => linkEvent('resume')}>
+        <li className="icon">
           <ResumeIcon url={resume} />
         </li>
       </ul>
