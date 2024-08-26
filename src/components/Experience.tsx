@@ -171,8 +171,8 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
           </p>
           <ul className="light-text">
             <li>
-              Collaborated with 2 other developers to optimise call quality,
-              speed and services massively over previous versions of the service
+              Reworked SpringBoot server to optimise video call quality, speed
+              and services over previous versions.
             </li>
             <li>
               Improved efficiency of JavaScript code on client&apos;s website to
