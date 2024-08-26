@@ -16,6 +16,56 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
       ref={experienceRef}
     >
       <h2>Experience</h2>
+      <ResumeEntry dateRange="Mar 2024 - Present" title="Backend Developer">
+        <div className="resume-content">
+          <p className="light-text">
+            <a
+              className="external"
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.dysonsphere.com.sg/"
+            >
+              Dyson Sphere
+            </a>{' '}
+            | Singapore
+          </p>
+          <SkillsDisplay
+            skills={[
+              'Azure',
+              'Cassandra',
+              'Consul',
+              'CWGO',
+              'Docker',
+              'Firebase',
+              'Golang',
+              'Goravel',
+              'MQTT',
+              'MySQL',
+              'Redis',
+              'Twilio',
+            ]}
+          />
+          <ul className="light-text">
+            <li>
+              Developed and co-designed backend architecture from the ground up
+              comprising of a reverse proxy, containerised microservices, Time
+              Series and Relational DB and appropriate caching.
+            </li>
+            <li>
+              Wrote CI/CD workflows for automation of linting, testing and
+              deployment to Azure Container Apps.
+            </li>
+            <li>
+              Closely collaborated with Front-End developers to ensure efficient
+              integration of backend endpoints.
+            </li>
+            <li>
+              Implemented bidirectional communication between the backend and
+              hundreds of IoT devices for command execution and sensor readings.
+            </li>
+          </ul>
+        </div>
+      </ResumeEntry>
       <ResumeEntry
         dateRange="May 2023 - Aug 2023"
         title="Full-Stack Developer Intern"

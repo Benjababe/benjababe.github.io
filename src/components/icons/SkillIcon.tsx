@@ -22,9 +22,24 @@ const skills: Skill[] = [
     text: 'Azure',
   },
   {
+    name: ['cassandra'],
+    src: SkillIcons.CassandraIcon,
+    text: 'Cassandra',
+  },
+  {
+    name: ['cloudwego', 'cwgo'],
+    src: SkillIcons.CloudWeGoIcon,
+    text: 'CloudWeGo',
+  },
+  {
     name: ['cmake'],
     src: SkillIcons.CMakeIcon,
     text: 'CMake',
+  },
+  {
+    name: ['consul'],
+    src: SkillIcons.ConsulIcon,
+    text: 'Consul',
   },
   {
     name: ['cpp', 'c++'],
@@ -77,6 +92,11 @@ const skills: Skill[] = [
     text: 'Go',
   },
   {
+    name: ['goravel'],
+    src: SkillIcons.GoravelIcon,
+    text: 'Goravel',
+  },
+  {
     name: ['grpc'],
     src: SkillIcons.gRPCIcon,
     text: 'gRPC',
@@ -115,6 +135,11 @@ const skills: Skill[] = [
     name: ['mysql'],
     src: SkillIcons.MySQLIcon,
     text: 'MySQL',
+  },
+  {
+    name: ['mqtt'],
+    src: SkillIcons.MQTTIcon,
+    text: 'MQTT',
   },
   {
     name: ['nestjs'],
@@ -167,6 +192,11 @@ const skills: Skill[] = [
     text: 'ReactJS',
   },
   {
+    name: ['redis'],
+    src: SkillIcons.RedisIcon,
+    text: 'Redis',
+  },
+  {
     name: ['socketio', 'socket.io'],
     src: SkillIcons.SocketIOIcon,
     text: 'Socket.IO',
@@ -185,6 +215,11 @@ const skills: Skill[] = [
     name: ['tailwind', 'tailwindcss'],
     src: SkillIcons.TailwindCSSIcon,
     text: 'TailwindCSS',
+  },
+  {
+    name: ['twilio'],
+    src: SkillIcons.TwilioIcon,
+    text: 'Twilio',
   },
   {
     name: ['typesense'],
