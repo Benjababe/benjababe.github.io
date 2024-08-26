@@ -8,39 +8,6 @@ const ProjectEntries = () => {
   return (
     <>
       <ProjectEntry
-        name="GenericMangoDownloader"
-        type="CLI Application"
-        skills={['Python', 'unittest']}
-      >
-        <ul className="icon-container project-icon-container">
-          <li className="icon project-icon">
-            <GithubIcon url="https://github.com/Benjababe/GenericMangoDownloader" />
-          </li>
-        </ul>
-        <ul className="project-desc">
-          <li>
-            Developed a CLI aggregate manga downloader with site specific
-            features.
-          </li>
-          <li>
-            Implemented publicly available APIs and a web scraper to retrieve
-            information for image downloads.
-          </li>
-          <li>
-            Constructed a modular system where extensions for additional
-            websites can be written and integrated seamlessly.
-          </li>
-          <li>
-            Reverse engineered websites&apos; JavaScript to include features not
-            easily accessible to the average user.
-          </li>
-          <li>
-            Wrote a plentiful amount of unit tests to show, specifically, which
-            features of which extension are currently not working.
-          </li>
-        </ul>
-      </ProjectEntry>
-      <ProjectEntry
         name="NTUMoons"
         type="Web Application"
         skills={['SvelteKit', 'Vercel', 'Firebase', 'Typesense', 'Python']}
@@ -74,6 +41,39 @@ const ProjectEntries = () => {
           <li>
             Implemented internationalisation to provide a more inclusive user
             experiences for multiple languages.
+          </li>
+        </ul>
+      </ProjectEntry>
+      <ProjectEntry
+        name="GenericMangoDownloader"
+        type="CLI Application"
+        skills={['Python', 'unittest']}
+      >
+        <ul className="icon-container project-icon-container">
+          <li className="icon project-icon">
+            <GithubIcon url="https://github.com/Benjababe/GenericMangoDownloader" />
+          </li>
+        </ul>
+        <ul className="project-desc">
+          <li>
+            Developed a CLI aggregate manga downloader with site specific
+            features.
+          </li>
+          <li>
+            Implemented publicly available APIs and a web scraper to retrieve
+            information for image downloads.
+          </li>
+          <li>
+            Constructed a modular system where extensions for additional
+            websites can be written and integrated seamlessly.
+          </li>
+          <li>
+            Reverse engineered websites&apos; JavaScript to include features not
+            easily accessible to the average user.
+          </li>
+          <li>
+            Wrote a plentiful amount of unit tests to show, specifically, which
+            features of which extension are currently not working.
           </li>
         </ul>
       </ProjectEntry>
