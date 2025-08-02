@@ -25,7 +25,7 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
               rel="noreferrer"
               href="https://www.dysonsphere.com.sg/"
             >
-              Dyson Sphere
+              DSNE
             </a>{' '}
             | Singapore
           </p>
@@ -47,17 +47,18 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
           />
           <ul className="light-text">
             <li>
-              Developed and co-designed backend architecture from the ground up
-              comprising of a reverse proxy, containerised microservices, Time
-              Series and Relational DB and appropriate caching.
+              Developed and co-designed a scalable backend architecture from the
+              ground up comprising of a reverse proxy, containerised
+              microservices, Time Series and Relational DB with appropriate
+              caching.
             </li>
             <li>
-              Wrote CI/CD workflows for automation of linting, testing and
-              deployment to Azure Container Apps.
+              Wrote CI/CD workflows for automation of linting, tests and
+              deployment to Azure Container Apps and Registry.
             </li>
             <li>
-              Closely collaborated with Front-End developers to ensure efficient
-              integration of backend endpoints.
+              Wrote internal documentation and development containers for smooth
+              onboarding or handover.
             </li>
             <li>
               Implemented bidirectional communication between the backend and
