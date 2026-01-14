@@ -87,6 +87,11 @@ const skills: Skill[] = [
     text: 'Firebase',
   },
   {
+    name: ['gin'],
+    src: SkillIcons.GinIcon,
+    text: 'Gin',
+  },
+  {
     name: ['go', 'golang'],
     src: SkillIcons.GoIcon,
     text: 'Go',
@@ -200,6 +205,11 @@ const skills: Skill[] = [
     name: ['socketio', 'socket.io'],
     src: SkillIcons.SocketIOIcon,
     text: 'Socket.IO',
+  },
+  {
+    name: ['sqlserver', 'sql server', 'mssql', 'ms sql'],
+    src: SkillIcons.SQLServerIcon,
+    text: 'SQL Server',
   },
   {
     name: ['svelte'],

@@ -172,6 +172,7 @@ a.external::after {
     background-color: #171717;
     color: #fff;
     border-radius: 1rem;
+    text-align: center;
 }
 
 .generic-skill-img {

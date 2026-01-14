@@ -34,14 +34,14 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
               'Azure',
               'Cassandra',
               'Consul',
-              'CWGO',
               'Docker',
               'Firebase',
+              'Gin',
               'Golang',
-              'Goravel',
               'MQTT',
               'MySQL',
               'Redis',
+              'SQL Server',
               'Twilio',
             ]}
           />
