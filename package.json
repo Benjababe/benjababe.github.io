@@ -19,7 +19,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "predeploy": "pnpm build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist --cname portfolio.benjababe.com",
     "lint": "eslint src/**/*.ts src/**/*.tsx"
   },
   "eslintConfig": {
