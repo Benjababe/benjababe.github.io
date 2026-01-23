@@ -48,8 +48,8 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
           <ul className="light-text">
             <li>
               Developed and co-designed a modular backend architecture
-              comprising of a reverse proxy, containerised microservices, Time
-              Series and Relational DB with appropriate caching to support
+              comprising of a reverse proxy, containerised microservices, NoSQL
+              and Relational Databases with appropriate caching to support
               future growth.
             </li>
             <li>
