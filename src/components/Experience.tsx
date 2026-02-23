@@ -1,4 +1,4 @@
-import { ForwardedRef } from 'react';
+import { ForwardedRef, memo } from 'react';
 import ResumeEntry from './ResumeEntry';
 import SkillsDisplay from './SkillsDisplay';
 
@@ -194,4 +194,4 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
   );
 };
 
-export default Experience;
+export default memo(Experience);

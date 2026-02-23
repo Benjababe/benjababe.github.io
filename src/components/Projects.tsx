@@ -1,4 +1,4 @@
-import { useState, ForwardedRef } from 'react';
+import { useState, ForwardedRef, memo } from 'react';
 import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
 import expandIcon from '../assets/images/icons/expand-icon.svg';
 import ProjectEntries from './ProjectEntries';
@@ -47,4 +47,4 @@ const Projects = ({ id, projectsRef, trackEvent }: ProjectsProps) => {
   );
 };
 
-export default Projects;
+export default memo(Projects);

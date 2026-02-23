@@ -1,4 +1,4 @@
-import { useState, useEffect, MutableRefObject } from 'react';
+import { useState, useEffect, memo, MutableRefObject } from 'react';
 import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
 import aboutIcon from '../assets/images/icons/about-icon.svg';
 import educationIcon from '../assets/images/icons/education-icon.svg';
@@ -94,4 +94,4 @@ const Header = ({ headerRefs, trackEvent }: HeaderProps) => {
   );
 };
 
-export default Header;
+export default memo(Header);

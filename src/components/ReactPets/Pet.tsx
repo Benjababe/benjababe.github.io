@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, RefObject, ReactElement } from 'react';
+import { useState, useEffect, useRef, memo, RefObject, ReactElement } from 'react';
 import Draggable, { DraggableData, DraggableEvent } from 'react-draggable';
 import BasePet, { PetState, PetType } from './BasePet';
 import Bunny from './pets/Bunny';
@@ -206,4 +206,4 @@ const Pet = ({
   );
 };
 
-export default Pet;
+export default memo(Pet);

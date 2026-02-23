@@ -2,12 +2,12 @@ import ImageGallery, { ReactImageGalleryItem } from 'react-image-gallery';
 import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
-import kumaPeek from '../assets/images/kuma/kuma-peek.png';
-import kuma1 from '../assets/images/kuma/kuma-pic-1.jpg';
-import kuma2 from '../assets/images/kuma/kuma-pic-2.jpg';
-import kuma3 from '../assets/images/kuma/kuma-pic-3.jpg';
-import kuma4 from '../assets/images/kuma/kuma-pic-4.jpg';
-import kumaGenlop from '../assets/images/kuma/kuma-genlop.png';
+import kumaPeek from '../assets/images/kuma/kuma-peek.webp';
+import kuma1 from '../assets/images/kuma/kuma-pic-1.webp';
+import kuma2 from '../assets/images/kuma/kuma-pic-2.webp';
+import kuma3 from '../assets/images/kuma/kuma-pic-3.webp';
+import kuma4 from '../assets/images/kuma/kuma-pic-4.webp';
+import kumaGenlop from '../assets/images/kuma/kuma-genlop.webp';
 import '../assets/styles/Kuma.css';
 
 interface KumaWidgetProps {

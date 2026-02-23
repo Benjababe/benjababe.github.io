@@ -1,7 +1,7 @@
-import { ForwardedRef, ReactElement, useRef, useState } from 'react';
+import { ForwardedRef, memo, ReactElement, useRef, useState } from 'react';
 import '../assets/styles/About.css';
 
-import mugshot from '../assets/images/mugshot.jpg';
+import mugshot from '../assets/images/mugshot.webp';
 import resume from '../assets/pdf/resume.pdf';
 
 import GithubIcon from './icons/GithubIcon';
@@ -20,8 +20,7 @@ interface AboutProps {
 const About = ({ id, aboutRef }: AboutProps): ReactElement => {
   const mugshotRef = useRef<HTMLDivElement>(null);
   const [showDemo, setShowDemo] = useState(
-    // () => sessionStorage.getItem('petDemoSeen') !== 'true',
-    true,
+    () => sessionStorage.getItem('petDemoSeen') !== 'true',
   );
 
   const handleDemoComplete = () => {
@@ -100,4 +99,4 @@ const About = ({ id, aboutRef }: AboutProps): ReactElement => {
   );
 };
 
-export default About;
+export default memo(About);
