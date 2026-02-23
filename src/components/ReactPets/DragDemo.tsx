@@ -83,7 +83,7 @@ const DragDemo = ({
       const dragX = spaceRight >= spaceLeft ? dragDistance : -dragDistance;
 
       setCatPos({ x, y, dragX });
-    }, 1000);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -185,7 +185,11 @@ const DragDemo = ({
   return (
     <div ref={cursorRef} className="drag-demo-cursor" aria-hidden="true">
       <span ref={openRef} className="drag-demo-hand-open" />
-      <span ref={grabRef} className="drag-demo-hand-grab" style={{ opacity: 0 }} />
+      <span
+        ref={grabRef}
+        className="drag-demo-hand-grab"
+        style={{ opacity: 0 }}
+      />
     </div>
   );
 };
