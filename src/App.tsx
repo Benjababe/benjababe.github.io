@@ -8,6 +8,7 @@ import Education from './components/Education';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import { Kuma, KumaWidget } from './components/Kuma';
+import BackToTop from './components/BackToTop';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -58,6 +59,7 @@ function App() {
           projectsRef={projectsRef}
           trackEvent={trackEvent}
         />
+        <BackToTop />
       </div>
     </div>
   );
