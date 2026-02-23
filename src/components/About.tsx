@@ -1,4 +1,4 @@
-import { ForwardedRef, ReactElement } from 'react';
+import { ForwardedRef, ReactElement, useRef, useState } from 'react';
 import '../assets/styles/About.css';
 
 import mugshot from '../assets/images/mugshot.jpg';
@@ -10,6 +10,7 @@ import ResumeIcon from './icons/ResumeIcon';
 import PetContainer from './ReactPets/PetContainer';
 import { PetType } from './ReactPets/BasePet';
 import Pet from './ReactPets/Pet';
+import DragDemo from './ReactPets/DragDemo';
 
 interface AboutProps {
   id: string;
@@ -17,6 +18,17 @@ interface AboutProps {
 }
 
 const About = ({ id, aboutRef }: AboutProps): ReactElement => {
+  const mugshotRef = useRef<HTMLDivElement>(null);
+  const [showDemo, setShowDemo] = useState(
+    // () => sessionStorage.getItem('petDemoSeen') !== 'true',
+    true,
+  );
+
+  const handleDemoComplete = () => {
+    setShowDemo(false);
+    sessionStorage.setItem('petDemoSeen', 'true');
+  };
+
   function getSubTitle() {
     const subtitles = [
       'Async jokes always Promise they will be good',
@@ -29,7 +41,7 @@ const About = ({ id, aboutRef }: AboutProps): ReactElement => {
 
   return (
     <section id={id} className="section about" ref={aboutRef}>
-      <div className="mugshot-container">
+      <div className="mugshot-container" ref={mugshotRef}>
         <img
           className="mugshot-img circle-dom"
           src={mugshot}
@@ -52,6 +64,9 @@ const About = ({ id, aboutRef }: AboutProps): ReactElement => {
             stateUpdateIntervalMs={6000}
           />
         </PetContainer>
+        {showDemo && (
+          <DragDemo containerRef={mugshotRef} onComplete={handleDemoComplete} />
+        )}
       </div>
       <div className="desc-container">
         <h1 className="title-name">
