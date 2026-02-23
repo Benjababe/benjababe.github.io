@@ -35,24 +35,24 @@ const About = ({ id, aboutRef }: AboutProps): ReactElement => {
           src={mugshot}
           alt="Mugshot Here"
         ></img>
+        <PetContainer overlay={true}>
+          <Pet
+            petType={PetType.Cat}
+            movementIntervalMs={5}
+            stateUpdateIntervalMs={2500}
+          />
+          <Pet
+            petType={PetType.Dog}
+            movementIntervalMs={5}
+            stateUpdateIntervalMs={3000}
+          />
+          <Pet
+            petType={PetType.Bunny}
+            movementIntervalMs={5}
+            stateUpdateIntervalMs={6000}
+          />
+        </PetContainer>
       </div>
-      <PetContainer overlay={false}>
-        <Pet
-          petType={PetType.Cat}
-          movementIntervalMs={5}
-          stateUpdateIntervalMs={2500}
-        />
-        <Pet
-          petType={PetType.Dog}
-          movementIntervalMs={5}
-          stateUpdateIntervalMs={3000}
-        />
-        <Pet
-          petType={PetType.Bunny}
-          movementIntervalMs={5}
-          stateUpdateIntervalMs={6000}
-        />
-      </PetContainer>
       <div className="desc-container">
         <h1 className="title-name">
           {'Benjamin '}
