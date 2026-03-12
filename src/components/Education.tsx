@@ -17,7 +17,7 @@ const Education = ({ id, educationRef }: EducationProps) => {
       <h2>Education</h2>
       <ResumeEntry
         title="Bachelor of Engineering"
-        dateRange="Aug 2020 - May 2024"
+        dateRange="Aug 2020 - Jan 2024"
       >
         <div className="resume-content">
           <p className="light-text">

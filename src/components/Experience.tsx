@@ -16,7 +16,7 @@ const Experience = ({ id, experienceRef }: ExperienceProps) => {
       ref={experienceRef}
     >
       <h2>Experience</h2>
-      <ResumeEntry dateRange="Mar 2024 - Present" title="Backend Developer">
+      <ResumeEntry dateRange="Apr 2024 - Present" title="Backend Developer">
         <div className="resume-content">
           <p className="light-text">
             <a
