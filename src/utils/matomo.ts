@@ -2,7 +2,6 @@
 // Based on: https://matomo.org/faq/new-to-piwik/how-do-i-start-tracking-data-with-matomo-on-websites-that-use-react/
 
 export interface MatomoTracker {
-  trackPageView(): void;
   trackEvent(
     category: string,
     action: string,
@@ -29,11 +28,6 @@ export function initMatomo(trackerUrl: string, siteId: number): void {
   // Always create the tracker instance so event tracking works in production
   // even if VITE_MATOMO_ENABLED is not explicitly set
   trackerInstance = {
-    trackPageView() {
-      const url = `${window.location.pathname}#${window.scrollY}`;
-      _paq.push(['setCustomUrl', url]);
-      _paq.push(['trackPageView']);
-    },
     trackEvent(
       category: string,
       action: string,
@@ -52,16 +46,6 @@ export function initMatomo(trackerUrl: string, siteId: number): void {
       }
     },
   };
-
-  // Track initial page view (only on non-localhost)
-  if (
-    window.location.hostname !== 'localhost' &&
-    window.location.hostname !== '127.0.0.1'
-  ) {
-    const url = `${window.location.pathname}#${window.scrollY}`;
-    _paq.push(['setCustomUrl', url]);
-    _paq.push(['trackPageView']);
-  }
 
   // Dev logging to help debug tracking issues
   if (import.meta.env.DEV) {

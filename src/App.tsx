@@ -65,7 +65,6 @@ function App() {
         lastSection = currentSection;
         const title = sectionTitles[currentSection] || 'Home';
         document.title = `${title} – BenjaSite`;
-        getTracker()?.trackPageView();
         lastTrack = now;
       }
     };
