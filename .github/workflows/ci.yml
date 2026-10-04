@@ -33,6 +33,8 @@ jobs:
         run: npx tsc -b --noEmit
 
       - name: Build
+        env:
+          VITE_MATOMO_ENABLED: 'true'
         run: pnpm build
 
       - name: Upload build artifact

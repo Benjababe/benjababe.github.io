@@ -13,6 +13,9 @@ export interface MatomoTracker {
 
 let trackerInstance: MatomoTracker | null = null;
 
+// Track only in production builds
+const IS_TRACKING = import.meta.env.VITE_MATOMO_ENABLED === 'true';
+
 /**
  * Initialize the classic Matomo tracker.
  * Call this once at app startup.
@@ -27,9 +30,18 @@ export function initMatomo(trackerUrl: string, siteId: number): void {
   // Enable link tracking (file downloads, outbound clicks)
   _paq.push(['enableLinkTracking']);
 
+  if (!IS_TRACKING) return;
+
   trackerInstance = {
     trackPageView() {
-      // Set custom URL with scroll position for SPA page views
+      // Skip tracking for localhost (CI/Lighthouse internal servers)
+      if (
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1'
+      ) {
+        return;
+      }
+
       const url = `${window.location.pathname}#${window.scrollY}`;
       _paq.push(['setCustomUrl', url]);
       _paq.push(['trackPageView']);
