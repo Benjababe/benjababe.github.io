@@ -10,10 +10,13 @@ const PetContainer = ({ overlay, children }: PetContainerProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const updatedChildren = children.map((child, i) => {
-    return cloneElement(child as ReactElement, {
-      key: `pet-${i}`,
-      containerRef: containerRef,
-    });
+    return cloneElement(
+      child as ReactElement<{ containerRef?: React.RefObject<HTMLDivElement> }>,
+      {
+        key: `pet-${i}`,
+        containerRef: containerRef,
+      },
+    );
   });
 
   return (
