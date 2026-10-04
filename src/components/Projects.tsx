@@ -1,12 +1,11 @@
 import { useState, ForwardedRef, memo } from 'react';
-import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
 import expandIcon from '../assets/images/icons/expand-icon.svg';
 import ProjectEntries from './ProjectEntries';
 
 interface ProjectsProps {
   id: string;
   projectsRef: ForwardedRef<HTMLDivElement>;
-  trackEvent: (param: TrackEventParams) => void;
+  trackEvent: (category: string, action: string, name?: string) => void;
 }
 
 const Projects = ({ id, projectsRef, trackEvent }: ProjectsProps) => {
@@ -15,11 +14,11 @@ const Projects = ({ id, projectsRef, trackEvent }: ProjectsProps) => {
   const toggleProjects = () => {
     setExpandProjects(!expandProjects);
 
-    trackEvent({
-      category: 'self-projects',
-      action: 'click-toggle',
-      name: expandProjects ? 'contract' : 'expand',
-    });
+    trackEvent(
+      'self-projects',
+      'click-toggle',
+      expandProjects ? 'contract' : 'expand',
+    );
   };
 
   return (

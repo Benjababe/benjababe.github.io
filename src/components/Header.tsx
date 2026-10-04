@@ -1,5 +1,4 @@
 import { useState, useEffect, memo, MutableRefObject } from 'react';
-import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
 import aboutIcon from '../assets/images/icons/about-icon.svg';
 import educationIcon from '../assets/images/icons/education-icon.svg';
 import experienceIcon from '../assets/images/icons/experience-icon.svg';
@@ -8,7 +7,7 @@ import '../assets/styles/Header.css';
 
 interface HeaderProps {
   headerRefs: { ref: MutableRefObject<HTMLDivElement>; name: string }[];
-  trackEvent: (param: TrackEventParams) => void;
+  trackEvent: (category: string, action: string, name?: string) => void;
 }
 
 const iconMap: Record<string, string> = {
@@ -55,11 +54,7 @@ const Header = ({ headerRefs, trackEvent }: HeaderProps) => {
   const scrollTo = (ref: MutableRefObject<HTMLDivElement>) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
 
-    trackEvent({
-      category: 'header',
-      action: 'scroll-to',
-      name: ref.current.id,
-    });
+    trackEvent('header', 'scroll-to', ref.current.id);
   };
 
   const headerElements = headerRefs.map((hRef, i) => {

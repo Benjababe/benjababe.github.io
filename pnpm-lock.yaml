@@ -11,9 +11,6 @@ importers:
       '@babel/plugin-transform-private-property-in-object':
         specifier: ^7.29.7
         version: 7.29.7(@babel/core@7.29.7)
-      '@jonkoops/matomo-tracker-react':
-        specifier: ^0.7.0
-        version: 0.7.0(react@19.3.0)
       benjababe.github.io:
         specifier: 'file:'
         version: file:(@babel/core@7.29.7)

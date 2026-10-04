@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { useMatomo } from '@jonkoops/matomo-tracker-react';
 import './assets/styles/App.css';
 
 import Header from './components/Header';
@@ -9,6 +8,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import { Kuma, KumaWidget } from './components/Kuma';
 import BackToTop from './components/BackToTop';
+import { getTracker } from './utils/matomo';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -28,11 +28,55 @@ function App() {
     { ref: projectsRef, name: 'projects' },
   ];
 
-  const { trackPageView, trackEvent } = useMatomo();
-
+  // Scroll-based SPA page view tracking
   useEffect(() => {
-    trackPageView();
-  });
+    const sectionTitles: Record<string, string> = {
+      about: 'About',
+      experience: 'Experience',
+      education: 'Education',
+      projects: 'Projects',
+      kuma: 'Kuma',
+    };
+
+    let lastTrack = 0;
+    let lastSection = '';
+
+    const handleScroll = () => {
+      const now = Date.now();
+      if (now - lastTrack < 2000) return; // throttle to 2s
+
+      // Find the most visible section
+      let maxVisible = 0;
+      let currentSection = '';
+
+      for (const { ref } of headerRefs) {
+        if (!ref.current) continue;
+        const rect = ref.current.getBoundingClientRect();
+        const visible =
+          Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+        if (visible > maxVisible && visible > 100) {
+          maxVisible = visible;
+          currentSection = ref.current.id;
+        }
+      }
+
+      // Track when section changes
+      if (currentSection && currentSection !== lastSection) {
+        lastSection = currentSection;
+        const title = sectionTitles[currentSection] || 'Home';
+        document.title = `${title} – BenjaSite`;
+        getTracker()?.trackPageView();
+        lastTrack = now;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [headerRefs]);
+
+  const trackEvent = (category: string, action: string, name?: string) => {
+    getTracker()?.trackEvent(category, action, name);
+  };
 
   useEffect(() => {
     Aos.init({

@@ -1,47 +1,47 @@
 .kuma-peek {
-    max-width: 8rem;
-    position: absolute;
-    left: 100%;
-    top: 40rem;
-    transform: translate(-60%);
-    cursor: pointer;
-    transition: 0.3s;
-    z-index: 1;
+  max-width: 8rem;
+  position: absolute;
+  left: 100%;
+  top: 40rem;
+  transform: translate(-60%);
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
 
-    /** hiding for reasons */
-    display: none;
+  /** hiding for reasons */
+  display: none;
 }
 
 .kuma-peek:hover {
-    transform: translate(-90%, 30%);
-    rotate: -5deg;
+  transform: translate(-90%, 30%);
+  rotate: -5deg;
 }
 
 .kuma-section {
-    padding-top: 0px;
-    height: 75rem;
-    max-height: 75rem;
+  padding-top: 0px;
+  height: 75rem;
+  max-height: 75rem;
 }
 
 .kuma-section.hidden {
-    overflow: hidden;
-    height: 0 !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .kuma-section.shown {
-    overflow: clip;
-    transition: all 0.3s ease-in-out;
+  overflow: clip;
+  transition: all 0.3s ease-in-out;
 }
 
 .image-gallery-image {
-    max-width: 40rem !important;
-    max-height: 30rem;
+  max-width: 40rem !important;
+  max-height: 30rem;
 }
 
 .kuma-caption {
-    text-align: center;
-    padding: 1rem 0 1.5rem 0;
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
 }

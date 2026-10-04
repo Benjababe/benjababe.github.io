@@ -1,68 +1,68 @@
 .about {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 42.5rem;
-    height: 75vh;
-    padding: 2.5rem 1rem 2.5rem 1rem !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 42.5rem;
+  height: 75vh;
+  padding: 2.5rem 1rem 2.5rem 1rem !important;
 }
 
 .mugshot-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-top: 4vh;
-    width: 30rem;
-    height: 15rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 4vh;
+  width: 30rem;
+  height: 15rem;
 }
 
 .mugshot-img {
-    max-width: 12rem;
-    max-height: 12rem;
-    border: 0.3rem solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 1.5rem;
+  max-width: 12rem;
+  max-height: 12rem;
+  border: 0.3rem solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
 }
 
 .desc-container {
-    margin-top: 0;
-    text-align: center;
+  margin-top: 0;
+  text-align: center;
 }
 
 .title-name {
-    text-align: center;
-    font-size: 4rem;
-    margin-top: 0;
-    margin-bottom: 0.25rem;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
 }
 
 .subtitle {
-    font-size: 1.25rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
+  font-size: 1.25rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 
 .sub-title {
-    text-transform: uppercase;
-    color: #FF7E7E;
-    font-size: 1.25rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #ff7e7e;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .sub-title a {
-    color: rgb(170, 199, 255);
-    text-decoration: none;
-    background-color: transparent;
+  color: rgb(170, 199, 255);
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .sub-title a:hover {
-    color: rgb(132, 156, 255);
+  color: rgb(132, 156, 255);
 }
 
 .desc {
-    max-width: 30rem;
-    margin: auto;
+  max-width: 30rem;
+  margin: auto;
 }

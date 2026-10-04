@@ -1,5 +1,4 @@
 import ImageGallery, { ReactImageGalleryItem } from 'react-image-gallery';
-import { TrackEventParams } from '@jonkoops/matomo-tracker-react/lib/types';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
 import kumaPeek from '../assets/images/kuma/kuma-peek.webp';
@@ -13,7 +12,7 @@ import '../assets/styles/Kuma.css';
 interface KumaWidgetProps {
   showKuma: boolean;
   setShowKuma: React.Dispatch<React.SetStateAction<boolean>>;
-  trackEvent: (p: TrackEventParams) => void;
+  trackEvent: (category: string, action: string, name?: string) => void;
 }
 
 interface KumaProps {
@@ -28,11 +27,7 @@ export const KumaWidget = ({
   const toggleKuma = () => {
     setShowKuma(!showKuma);
 
-    trackEvent({
-      category: 'kuma-widget',
-      action: 'click-toggle',
-      name: showKuma ? 'hide' : 'show',
-    });
+    trackEvent('kuma-widget', 'click-toggle', showKuma ? 'hide' : 'show');
   };
 
   return (
