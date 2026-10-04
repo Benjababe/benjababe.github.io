@@ -16,6 +16,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:track": "cross-env VITE_MATOMO_ENABLED=true vite",
     "build": "tsc -b && vite build",
     "predeploy": "pnpm build",
     "deploy": "gh-pages -d dist --cname portfolio.benjababe.com",
@@ -43,6 +44,7 @@
     "@typescript-eslint/parser": "^8.71.0",
     "@vitejs/plugin-react": "^6.1.1",
     "aos": "^2.3.4",
+    "cross-env": "^10.1.0",
     "eslint": "^9.39.5",
     "eslint-config-prettier": "^9.1.2",
     "eslint-plugin-prettier": "^5.5.6",
