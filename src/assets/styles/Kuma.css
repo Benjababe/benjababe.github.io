@@ -9,7 +9,7 @@
     z-index: 1;
 
     /** hiding for reasons */
-    display: block;
+    display: none;
 }
 
 .kuma-peek:hover {

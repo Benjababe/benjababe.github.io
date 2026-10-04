@@ -50,12 +50,20 @@ export const KumaWidget = ({
 };
 
 export const Kuma = ({ showKuma }: KumaProps) => {
-  const images: ReactImageGalleryItem[] = [
-    { original: kuma1 },
-    { original: kuma2 },
-    { original: kuma3 },
-    { original: kuma4 },
-  ];
+  const images = [
+    { original: kuma1, thumbnail: kuma1, originalAlt: 'Kuma Linux terminal' },
+    { original: kuma2, thumbnail: kuma2, originalAlt: 'Kuma Linux desktop' },
+    {
+      original: kuma3,
+      thumbnail: kuma3,
+      originalAlt: 'Kuma Linux applications',
+    },
+    {
+      original: kuma4,
+      thumbnail: kuma4,
+      originalAlt: 'Kuma Linux customization',
+    },
+  ] as ReactImageGalleryItem[];
 
   return (
     <section
@@ -66,9 +74,11 @@ export const Kuma = ({ showKuma }: KumaProps) => {
           items={images}
           infinite={true}
           showThumbnails={false}
-          showBullets={true}
+          showBullets={false}
           showPlayButton={false}
           showFullscreenButton={false}
+          showNav={true}
+          showIndex={true}
         />
         <h3 className="kuma-caption light-text">
           Who is so much of a moron to spend over a week installing an usable

@@ -16,7 +16,7 @@
 .nav-link {
     width: fit-content;
     margin: auto;
-    color: rgb(80, 80, 80);
+    color: rgb(200, 200, 200);
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -31,7 +31,8 @@
     color: white;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus-visible {
     color: white;
 }
 

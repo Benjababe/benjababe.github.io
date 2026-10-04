@@ -208,7 +208,13 @@ const Pet = ({
       nodeRef={petImgRef}
       bounds="parent"
     >
-      <img ref={petImgRef} className="pet" src={petInfo.idleAnim} />
+      <img
+        ref={petImgRef}
+        className="pet"
+        src={petInfo.idleAnim}
+        alt={`${petType} pet animation`}
+        role="img"
+      />
     </Draggable>
   );
 };

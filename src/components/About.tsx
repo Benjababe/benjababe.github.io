@@ -72,7 +72,7 @@ const About = ({ id, aboutRef }: AboutProps): ReactElement => {
           {'Benjamin '}
           <span className="title-alt">Goh</span>
         </h1>
-        <h3>{getSubTitle()}</h3>
+        <div className="subtitle plain-text">{getSubTitle()}</div>
         <div className="sub-title plain-text">
           {'Singapore · '}
           <a href="mailto:bengohzy@gmail.com">bengohzy@gmail.com</a>

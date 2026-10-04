@@ -38,13 +38,22 @@
     margin-bottom: 0.25rem;
 }
 
+.subtitle {
+    font-size: 1.25rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
 .sub-title {
     text-transform: uppercase;
     color: #FF7E7E;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 .sub-title a {
-    color: rgb(60, 99, 255);
+    color: rgb(170, 199, 255);
     text-decoration: none;
     background-color: transparent;
 }
