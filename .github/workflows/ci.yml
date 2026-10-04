@@ -35,6 +35,13 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Upload build artifact
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: ./dist
+
       - name: Start dev server
         run: pnpm dev --host --port 5173 &
         env:
