@@ -71,8 +71,16 @@ export function initMatomo(trackerUrl: string, siteId: number): void {
 
   // Dev logging to help debug tracking issues
   if (import.meta.env.DEV) {
-    console.info('[Matomo] Initialized | trackerUrl:', trackerUrl, '| siteId:', siteId);
+    // eslint-disable-next-line no-console
+    console.info(
+      '[Matomo] Initialized | trackerUrl:',
+      trackerUrl,
+      '| siteId:',
+      siteId,
+    );
+    // eslint-disable-next-line no-console
     console.info('[Matomo] IS_TRACKING:', IS_TRACKING);
+    // eslint-disable-next-line no-console
     console.info('[Matomo] _paq queue size:', _paq.length);
   }
 }
