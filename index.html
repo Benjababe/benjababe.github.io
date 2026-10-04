@@ -14,21 +14,13 @@
     <title>BenjaSite</title>
 
     <!-- Matomo Tracker -->
-    <script type="text/javascript">
-      var _paq = window._paq = window._paq || [];
-      /* tracker methods like "setCustomUrl" or "setDocumentTitle" do not work properly. Must be called before any other tracker method. */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-    </script>
     <script type="text/javascript" src="https://matomo.lab.benjababe.com/matomo.js" async defer></script>
-
-    <!-- Noscript fallback for non-JavaScript browsers -->
-    <noscript>
-      <p><img src="https://matomo.lab.benjababe.com/piwik.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
-    </noscript>
 </head>
 
 <body>
+    <noscript>
+        <p><img src="https://matomo.lab.benjababe.com/piwik.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
